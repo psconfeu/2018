@@ -1,4 +1,4 @@
-# Session slides and demo scripts from PowerShell Conference EU, 2017
+# Session slides and demo scripts from PowerShell Conference EU, 2018
 
 ## Note to Speakers:
 
