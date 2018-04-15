@@ -15,7 +15,7 @@ Lean back, join this workshop, and become friends with PlatyPS! PlatyPS is the n
 - How do you maintain and update your documentation with new versions of your code, and new functions or new parameters introduced? PlatyPS is the answer: version control friendly documentation, support for updating existing help
 - Finally: how do you work as a team? PlatyPS is the answer: enable others to contribute to your documentation with ease.
  
-PlatyPS adds the professional touch to your PS projects, and is completely free. Join the list of these popular modules that already use platyPS: Azure-Powershell, Powershell-Docs, PSReadLine.
+PlatyPS adds the professional touch to your PS projects, and is completely free. Join the list of these popular modules that already use platyPS: Azure-Powershell, Powershell-Docs, PSReadLine, office-powershell.
 
 In this workshop we will cover:
 
@@ -29,7 +29,7 @@ In this workshop we will cover:
 As a bonus we will talk about few advanced topics that haven’t been widely discussed before:
 
 - support for multiple versions in a single file.
--localization story.
+- localization story.
 
 Come and join the movement to modernize the powershell help!
 
