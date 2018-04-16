@@ -1,0 +1,3 @@
+NodeName: DSCWeb02
+Role: WebServer
+Description: Web Server in Prod
