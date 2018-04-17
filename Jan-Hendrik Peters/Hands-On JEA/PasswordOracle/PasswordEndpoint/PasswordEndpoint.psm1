@@ -51,13 +51,8 @@ function Get-Password
         $userName = ($caller -split "@")[0]
     }
     
-    $rdse = [adsi]'LDAP://RootDSE'
-    $domain  = $rdse.DefaultNamingContext
-    $searcher = [adsisearcher]::new($domain,"(&(objectclass=user)(samaccountname=$userName))")
-    $searcher.SearchScope = 'SubTree'
-    $result = $searcher.FindOne()
-    $userDn = $result.Properties['distinguishedname']
-
+    $user = Get-ADUser -Identity $userName
+    $userDn = $user.distinguishedname -replace ',',', '
     return ($content | Unprotect-CmsMessage | Protect-CmsMessage -To $userDn)
 }
 
@@ -71,7 +66,7 @@ function Set-Password
 
         [Parameter()]
         [string]
-        $Prefix,
+        $Prefix = [String]::Empty,
 
         [Parameter(Mandatory)]
         [string]
@@ -84,16 +79,16 @@ function Set-Password
     try
     {
         $encryptedData = Get-CmsMessage -Content $CmsMessage -ErrorAction Stop
-        if ($encryptedData.Recipients.IssuerName -notcontains (Get-Item -Path cert:\LocalMachine\my\ -DocumentEncryptionCert -ErrorAction SilentlyContinue).Subject)
-        {
-            Write-Error -Message ("Message not encrypted for recipient. We are {0}" -f (Get-Item -Path cert:\LocalMachine\my -DocumentEncryptionCert -ErrorAction SilentlyContinue).Subject)
-            return
-        }
     }
     catch
     {
         Write-Error -Message "Encrypted content was not accessible." -Exception $cmsError.Exception -TargetObject $ObjectName
         return
+    }
+
+    if ($Prefix -and -not (Test-Path (Join-Path -Path $dataFilePath -ChildPath $Prefix)))
+    {
+        [void] (New-Item -ItemType Directory -Path (Join-Path -Path $dataFilePath -ChildPath $Prefix))
     }
 
     $filePath = Join-Path -Path (Join-Path -Path $dataFilePath -ChildPath $Prefix) -ChildPath $ObjectName

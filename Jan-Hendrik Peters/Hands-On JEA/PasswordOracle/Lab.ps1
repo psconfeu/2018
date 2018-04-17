@@ -26,9 +26,10 @@ Install-Lab
 Show-LabDeploymentSummary
 #endregion
 
+Checkpoint-LabVm -All -SnapshotName BeforeCustomization
 break
 
-Checkpoint-LabVm -All -SnapshotName BeforeCustomization
+Install-LabWindowsFeature -FeatureName RSAT-AD-Tools -ComputerName PW01 -IncludeAllSubFeature -NoDisplay
 
 #region Post-Deployment tasks
 Invoke-LabCommand -ComputerName DC01 -ScriptBlock {
@@ -40,14 +41,14 @@ New-LabCATemplate -TemplateName CmsDocEnc `
     -SourceTemplateName 'CEPEncryption' `
     -ApplicationPolicy 'Document Encryption' `
     -KeyUsage KEY_AGREEMENT, KEY_ENCIPHERMENT, DATA_ENCIPHERMENT `
-    -EnrollmentFlags Autoenrollment -SamAccountName 'Domain Computers' -ComputerName CA01 -ErrorAction Stop
+    -EnrollmentFlags Autoenrollment -SamAccountName 'Domain Computers','Domain Users' -ComputerName CA01 -ErrorAction Stop
 
-Enable-LabCertificateAutoenrollment -Computer
+Enable-LabCertificateAutoenrollment -Computer -User
 
 $client = Get-LabVm -ComputerName CL01
 $server = Get-LabVm -ComputerName PW01
 $serverCertificate = Request-LabCertificate -Subject "CN=$($server.FQDN)" -TemplateName CmsDocEnc -PassThru -ComputerName $server
-$clientCertificate = Request-LabCertificate -Subject "CN=install, CN=Users, DC=contoso, DC=com" -TemplateName CmsDocEnc -PassThru -ComputerName $client
+$clientCertificate = Request-LabCertificate -Subject "CN=install,CN=Users,DC=contoso,DC=com" -TemplateName CmsDocEnc -PassThru -ComputerName $client
 
 Invoke-LabCommand -ActivityName 'Storing Certificate' -ComputerName PW01 -ScriptBlock {
     [System.IO.File]::WriteAllBytes('C:\CmsCert.cer', $clientCertificate.RawData)
@@ -73,8 +74,7 @@ break
 
 # Copy module and role-capabilities to remote session
 $sessionToRestrict = New-LabPSSession -ComputerName PW01
-Import-Module .\PasswordEndpoint
-Send-ModuleToPSSession -Module (Get-Module PasswordEndpoint) -Session $sessionToRestrict
+Send-ModuleToPSSession -Module (Get-Module PasswordEndpoint -ListAvailable) -Session $sessionToRestrict
 
 # New Session configuration
 Invoke-Command -Session $sessionToRestrict -ScriptBlock {
@@ -83,7 +83,8 @@ Invoke-Command -Session $sessionToRestrict -ScriptBlock {
         'contoso\PasswordWriter' = @{RoleCapabilities = 'Writer'}
     }
 
-    New-PSSessionConfigurationFile -Path C:\PasswordEndpoint.pssc -RoleDefinitions $roleDefinitions -ModulesToImport PasswordEndpoint -SessionType RestrictedRemoteServer -LanguageMode Full -ExecutionPolicy Unrestricted -Full
+    New-PSSessionConfigurationFile -Path C:\PasswordEndpoint.pssc -RoleDefinitions $roleDefinitions `
+    -ModulesToImport PasswordEndpoint -SessionType RestrictedRemoteServer -LanguageMode Full -ExecutionPolicy Unrestricted -Full -VisibleProviders FileSystem
     Register-PSSessionConfiguration -Path C:\PasswordEndpoint.pssc -Name PasswordEndpoint -Force
 }
 
@@ -94,13 +95,12 @@ Add-VariableToPSSession -Session $clientSession -PSVariable (Get-Variable labCre
 
 Enter-PSSession $clientSession
 
-
 $passwordSession = New-PSSession -ComputerName PW01 -ConfigurationName PasswordEndpoint -Credential $labCredential -Authentication Credssp
 
 Import-PSSession -Session $passwordSession -CommandName Get-Password,Set-Password,Remove-Password,Get-ServerThumbprint
 
 # None yet
-Get-Password
+Get-Password -ObjectName server01connectionstring -Prefix a.contoso.com
 
 # There is always a little gap when handling passwords. Secure strings cannot be transported, so you would
 # have to decrypt them either way before wrapping in a CMS message. Storing passwords is never a great idea...
