@@ -1,7 +1,0 @@
-NodeName: DSCWeb01
-Role: WebServer
-Description: 'Web Server in Dev'
-
-WindowsFeatures:
-  Name:
-  - BITS
