@@ -1,0 +1,48 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98bc1a88-4028-40a2-9ab2-f24b7b165a86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>DscScripts</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="01 Compile DSC Config.ps1" />
+    <Compile Include="01.1 Dsc Config.ps1" />
+    <Compile Include="02 Configure LCM on Nodes.ps1" />
+    <Compile Include="02.1 LCM Meta Config.ps1" />
+    <Compile Include="Config\GlobalConfigurationData.psd1" />
+    <Compile Include="Config\Roles_Exchange_Transport.psd1" />
+    <Compile Include="Config\Roles_WebServer_WebSites.psd1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Nodes.csv" />
+    <Content Include="Config\Roles_FileServers_Shares.csv" />
+    <Content Include="Config\Roles_WebServer_Features.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+  <Import Project="$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets" Condition="Exists('$(MSBuildExtensionsPath)\PowerShell Tools for Visual Studio\PowerShellTools.targets')" />
+</Project>

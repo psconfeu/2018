@@ -1,0 +1,7 @@
+#TYPE System.Management.Automation.PSCustomObject
+"NodeName","Domain","Role","Timezone","CertificateFile"
+"dsc1Node01","contoso.com","FileServer","W. Europe Standard Time"
+"dsc1Node02","contoso.com","FileServer","W. Europe Standard Time"
+"dsc1Node03","contoso.com","WebServer","W. Europe Standard Time"
+"dsc1Node04","contoso.com","WebServer","W. Europe Standard Time"
+"dsc1Node05","contoso.com","","W. Europe Standard Time"

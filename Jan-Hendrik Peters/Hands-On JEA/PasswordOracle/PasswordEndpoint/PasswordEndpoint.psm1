@@ -1,5 +1,4 @@
 $dataFilePath = (Get-Module PasswordEndpoint -ListAvailable)[0].PrivateData['StoragePath']
-$thumbPrint = (Get-Module PasswordEndpoint -ListAvailable)[0].PrivateData['CertificateThumbprint']
 
 function Get-Password
 {
@@ -46,7 +45,20 @@ function Get-Password
         return
     }
 
-    return ($content | Unprotect-CmsMessage | Protect-CmsMessage -To $PSSenderInfo.UserInfo.Name)
+    $userName = ($caller -split "\\")[1]
+    if ($caller -match "@")
+    {
+        $userName = ($caller -split "@")[0]
+    }
+    
+    $rdse = [adsi]'LDAP://RootDSE'
+    $domain  = $rdse.DefaultNamingContext
+    $searcher = [adsisearcher]::new($domain,"(&(objectclass=user)(samaccountname=$userName))")
+    $searcher.SearchScope = 'SubTree'
+    $result = $searcher.FindOne()
+    $userDn = $result.Properties['distinguishedname']
+
+    return ($content | Unprotect-CmsMessage | Protect-CmsMessage -To $userDn)
 }
 
 function Set-Password
@@ -72,9 +84,9 @@ function Set-Password
     try
     {
         $encryptedData = Get-CmsMessage -Content $CmsMessage -ErrorAction Stop
-        if ($encryptedData.Recipients.IssuerName -notcontains (Get-Item -Path cert:\LocalMachine\my\$thumbPrint -ErrorAction SilentlyContinue).Subject)
+        if ($encryptedData.Recipients.IssuerName -notcontains (Get-Item -Path cert:\LocalMachine\my\ -DocumentEncryptionCert -ErrorAction SilentlyContinue).Subject)
         {
-            Write-Error -Message ("Message not encrypted for recipient. We are {0}" -f (Get-Item -Path cert:\LocalMachine\my\$thumbPrint -ErrorAction SilentlyContinue).Subject)
+            Write-Error -Message ("Message not encrypted for recipient. We are {0}" -f (Get-Item -Path cert:\LocalMachine\my -DocumentEncryptionCert -ErrorAction SilentlyContinue).Subject)
             return
         }
     }
@@ -116,7 +128,7 @@ function Remove-Password
     }
 }
 
-function Get-ServerThumbprint
+function Get-ServerCertificate
 {
-    return $thumbPrint
+    return (Get-Item -Path cert:\LocalMachine\my\ -DocumentEncryptionCert -ErrorAction SilentlyContinue)
 }

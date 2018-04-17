@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<SteroidOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PlayErrorSound>true</PlayErrorSound>
+  <DisableExternalHelpCache>false</DisableExternalHelpCache>
+  <MergeToolExecutablePath>{0}\3rdParty\WinMerge\WinMergePortable.exe</MergeToolExecutablePath>
+  <MergeToolArguments>/e /x /s /ur /wr /dl "{0}" /dr "{1}" "{2}" "{3}"</MergeToolArguments>
+  <markExternalCommands>false</markExternalCommands>
+  <PsTargetLinux>false</PsTargetLinux>
+  <AutomaticRiskCheckEnabled>true</AutomaticRiskCheckEnabled>
+  <TreatSignedScriptAsSafe>true</TreatSignedScriptAsSafe>
+  <DoNotShowSignatureOverrideWarning>false</DoNotShowSignatureOverrideWarning>
+  <DoNotShowDefaultEncodingWarning>false</DoNotShowDefaultEncodingWarning>
+  <DefaultEncoding />
+  <DoNotWarnBeforeRefactoring>false</DoNotWarnBeforeRefactoring>
+  <DoNotShowIndentWarning>true</DoNotShowIndentWarning>
+  <DoNotShowSaveUntitledWarning>false</DoNotShowSaveUntitledWarning>
+  <SkipPersistWarning>true</SkipPersistWarning>
+  <SkipPersistWarningOnLoad>true</SkipPersistWarningOnLoad>
+  <SnippetNewFunction />
+  <IncludeMultipleStructureDefinitionForNewFunction>false</IncludeMultipleStructureDefinitionForNewFunction>
+  <LastUpdate>2017-02-27T17:51:36.0431826+01:00</LastUpdate>
+  <ShowDebugMargin>true</ShowDebugMargin>
+  <ExcludeRegionsFromCombo>false</ExcludeRegionsFromCombo>
+  <ShowIndentationGuide>false</ShowIndentationGuide>
+  <GuideMaximumColumn>0</GuideMaximumColumn>
+  <SortRegionsAlphabetically>false</SortRegionsAlphabetically>
+  <HideNonMatchingResults>false</HideNonMatchingResults>
+  <UseRegExInInstantSearch>false</UseRegExInInstantSearch>
+  <HideLevelMenu>false</HideLevelMenu>
+  <SnippetTooltipZoom>100</SnippetTooltipZoom>
+  <ShowAdminWarning>false</ShowAdminWarning>
+  <DoNotShowPSSharperSuggestions>false</DoNotShowPSSharperSuggestions>
+  <PSSharperVisualsDisabled>false</PSSharperVisualsDisabled>
+  <SearchInComments>false</SearchInComments>
+  <FilterSearchResults>false</FilterSearchResults>
+  <PSSharperTooltipsDisabled>false</PSSharperTooltipsDisabled>
+  <UILevelDefined>false</UILevelDefined>
+  <ShowRulesScriptAnalyzer>false</ShowRulesScriptAnalyzer>
+  <DoNotShowRulesSteroids>false</DoNotShowRulesSteroids>
+  <DoNotShowPesterIntegration>false</DoNotShowPesterIntegration>
+  <DoNotUpdateSignatureOnSave>false</DoNotUpdateSignatureOnSave>
+  <DisableDigitalSignatureSupport>false</DisableDigitalSignatureSupport>
+  <PsTargetMinimum>2.0</PsTargetMinimum>
+  <PsTargetMaximum>5.1</PsTargetMaximum>
+  <LaunchSilently>false</LaunchSilently>
+  <ShowBusyStateInStatusBar>false</ShowBusyStateInStatusBar>
+  <DoNotCheckCertificateValidity>false</DoNotCheckCertificateValidity>
+  <DoNotShowWelcomeDialogForUILevelChanges>false</DoNotShowWelcomeDialogForUILevelChanges>
+  <AutoIndent>true</AutoIndent>
+  <HideConsoleToolbar>false</HideConsoleToolbar>
+  <MonitorRuntimeErrors>false</MonitorRuntimeErrors>
+  <PresentationMaximizeOnFlip>true</PresentationMaximizeOnFlip>
+  <PresentationAutoHideTaskbar>false</PresentationAutoHideTaskbar>
+  <PresentationCloseInteractivePane>true</PresentationCloseInteractivePane>
+  <PresentationStartSlideImmediately>false</PresentationStartSlideImmediately>
+  <PresentationShowProgress>true</PresentationShowProgress>
+  <PresentationMutualExclusiveFile>false</PresentationMutualExclusiveFile>
+  <PresentationDiscardChanges>false</PresentationDiscardChanges>
+  <PresentationDiscardUntitled>false</PresentationDiscardUntitled>
+  <StopWatchDuration>45</StopWatchDuration>
+  <UpdateFrequency>7</UpdateFrequency>
+  <MRUSortAlphabetically>false</MRUSortAlphabetically>
+  <MRUDoNotShortenPath>false</MRUDoNotShortenPath>
+  <ShowCurrentLineAdornment>false</ShowCurrentLineAdornment>
+  <DisabledSquiggleChecks />
+  <DoNotMonitorFileChange>false</DoNotMonitorFileChange>
+  <DoNotUseConsoleMenuBar>false</DoNotUseConsoleMenuBar>
+  <ConsoleMenuBarVisible>false</ConsoleMenuBarVisible>
+  <SkipProfileInConsole>false</SkipProfileInConsole>
+  <DoNotShowSelectionDialogByDefault>false</DoNotShowSelectionDialogByDefault>
+  <DoNotShowViewModeWarning>false</DoNotShowViewModeWarning>
+  <SkipWarningDisableSquiggle>false</SkipWarningDisableSquiggle>
+  <SkipWarningDragDrop>false</SkipWarningDragDrop>
+  <SkipWarningMonitorMessage>false</SkipWarningMonitorMessage>
+  <ShowCommunityPane>false</ShowCommunityPane>
+  <ShowSecondaryToolbar>true</ShowSecondaryToolbar>
+  <SkipBlurOnLoad>true</SkipBlurOnLoad>
+  <LiteralViewDisabled>true</LiteralViewDisabled>
+  <CommentFontName>Corbel</CommentFontName>
+  <CommentFontStyle />
+  <CommentFontStretch />
+  <CommentFontWeight />
+  <RemoveSubVersions>false</RemoveSubVersions>
+  <CommentFontSizeAdjustment>-4</CommentFontSizeAdjustment>
+  <CustomizeComment>true</CustomizeComment>
+  <NumberFontName>Courier New</NumberFontName>
+  <NumberFontStyle />
+  <NumberFontStretch />
+  <NumberFontWeight />
+  <NumberFontSizeAdjustment>0</NumberFontSizeAdjustment>
+  <CustomizeNumber>true</CustomizeNumber>
+  <StringFontName>anonymous_pro_i.ttf#Anonymous Pro</StringFontName>
+  <StringFontStyle />
+  <StringFontStretch />
+  <StringFontWeight />
+  <StringFontSizeAdjustment>-1.5</StringFontSizeAdjustment>
+  <CustomizeString>true</CustomizeString>
+  <SaveWorkstateOnExit>false</SaveWorkstateOnExit>
+  <ArgumentFontName>Courier New</ArgumentFontName>
+  <ArgumentFontStyle />
+  <ArgumentFontStretch />
+  <ArgumentFontWeight />
+  <ArgumentFontSizeAdjustment>0</ArgumentFontSizeAdjustment>
+  <CustomizeArgument>true</CustomizeArgument>
+  <EnableThemeAdjustment>true</EnableThemeAdjustment>
+  <LiteralViewDisabledOnEdit>false</LiteralViewDisabledOnEdit>
+  <CommentFontEmSize>0</CommentFontEmSize>
+  <ShowTrackerBar>false</ShowTrackerBar>
+  <ShowVisibleWhitespace>false</ShowVisibleWhitespace>
+  <DisableWordWrap>true</DisableWordWrap>
+  <DoNotShowSyntaxErrors>false</DoNotShowSyntaxErrors>
+  <DoNotShowRuntimeErrors>false</DoNotShowRuntimeErrors>
+  <DoNotShowCommunityTickerWarning>false</DoNotShowCommunityTickerWarning>
+  <DisableLineMarginEnhancements>false</DisableLineMarginEnhancements>
+  <DoNotShowTrackerDisableWarning>false</DoNotShowTrackerDisableWarning>
+  <SkipWarningOnBadExecutionPolicy>false</SkipWarningOnBadExecutionPolicy>
+  <ColorHighlightMode>3</ColorHighlightMode>
+  <DisablePSSharper>false</DisablePSSharper>
+  <HidePSSharperControlPanel>false</HidePSSharperControlPanel>
+  <AcceptedEULA>true</AcceptedEULA>
+  <AutomaticAutoComplete>true</AutomaticAutoComplete>
+  <WizardQuoteEnabled>true</WizardQuoteEnabled>
+  <WizardBraceEnabled>true</WizardBraceEnabled>
+  <BraceMatchingTokenBorderColor>#FFF7C96C</BraceMatchingTokenBorderColor>
+  <BraceMatchingTokenFillColor>#FFF7C96C</BraceMatchingTokenFillColor>
+  <BraceMatchingRegionBorderColor>#FFFFA500</BraceMatchingRegionBorderColor>
+  <BraceMatchingRegionFillColor>#AAFFF9F0</BraceMatchingRegionFillColor>
+  <CurrentLineBorderColor>#11F7DF09</CurrentLineBorderColor>
+  <CurrentLineFillColor>#11F7DF09</CurrentLineFillColor>
+  <CurrentLineBorderThickness>0</CurrentLineBorderThickness>
+  <WizardCurlyBraceEnabled>true</WizardCurlyBraceEnabled>
+  <WizardBracketEnabled>true</WizardBracketEnabled>
+  <HighlightInputLine>true</HighlightInputLine>
+  <HighlightSB>true</HighlightSB>
+  <NavigationBarVisible>true</NavigationBarVisible>
+  <AddonVisible />
+  <SecurityMenuVisible>false</SecurityMenuVisible>
+  <EmbraceSelection>false</EmbraceSelection>
+  <SteroidsToolbarVisible>true</SteroidsToolbarVisible>
+  <FontFamilyVariableMonitor>Segoe UI</FontFamilyVariableMonitor>
+  <FontSizeVariableMonitor>11</FontSizeVariableMonitor>
+  <IndentSize>4</IndentSize>
+  <ConvertTabToSpace>true</ConvertTabToSpace>
+  <UsePfxCertificateForSigning>false</UsePfxCertificateForSigning>
+  <UseExistingCertForSigning>true</UseExistingCertForSigning>
+  <UseTimeStampServer>false</UseTimeStampServer>
+  <TimeStampServerURI>http://timestamp.verisign.com/scripts/timstamp.dll</TimeStampServerURI>
+  <TempID />
+  <useProxy>false</useProxy>
+  <CheckInternetAtStartup>true</CheckInternetAtStartup>
+  <UseDefaultProxyCredentials>false</UseDefaultProxyCredentials>
+  <UseAlternateProxyCredentials>false</UseAlternateProxyCredentials>
+  <EnableGreenSquiggle>true</EnableGreenSquiggle>
+  <EnableBlueSquiggle>true</EnableBlueSquiggle>
+</SteroidOptions>
