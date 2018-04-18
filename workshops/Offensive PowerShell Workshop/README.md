@@ -8,9 +8,8 @@ Because some of these files are often flagged by anti-virus, the .zip is encrypt
 
 There are a number of third party files that will be used in the workshop that we do not have the rights to redistribute.
 
-If you would like to follow along with these parts of the workshop, please download the following files:
+If you would like to follow along with these parts of the workshop, please download the following files (also documented in .\labs\setup.ps1):
 
 * [Sysmon](https://live.sysinternals.com/Sysmon64.exe)
 * [Procdump](https://live.sysinternals.com/procdump64.exe)
 * [dnSpy](https://github.com/0xd4d/dnSpy/releases)
-* (Purely optional, might not be needed) [Visual Studio Community Edition](https://www.visualstudio.com/vs/community/)
