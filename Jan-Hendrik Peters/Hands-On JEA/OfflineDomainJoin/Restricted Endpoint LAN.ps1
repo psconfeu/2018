@@ -194,4 +194,4 @@ function Register-SupportPSSessionConfiguration
     Set-PSSessionConfiguration -Name $endpointName -SecurityDescriptorSddl $psscSd.GetSddlForm("All") -Force
 } 
  
-Register-SupportPSSessionConfiguration -RunAsUser contoso\OfflineDomainJoin -RunAsUserPassword Password1 -AllowedPrincipals contoso\zMgmtRodcs$ -Force
+Register-SupportPSSessionConfiguration -RunAsUser contoso\OfflineDomainJoin -RunAsUserPassword Password1 -AllowedPrincipals contoso\ODCRD01$ -Force

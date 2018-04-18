@@ -1,5 +1,7 @@
 if (-not (Get-Module AutomatedLab -List)) { Install-Module AutomatedLab -AllowClobber -Force}
 
+Set-Location $PSScriptRoot
+break
 #region Lab deployment
 # The building blocks for a lab: Definition, Machines and the Installation itself
 New-LabDefinition -Name psconfJeaPw -DefaultVirtualizationEngine HyperV
@@ -29,6 +31,8 @@ Show-LabDeploymentSummary
 Checkpoint-LabVm -All -SnapshotName BeforeCustomization
 break
 
+Import-Lab psconfjeapw -NoValidation
+Start-LabVm -All
 Install-LabWindowsFeature -FeatureName RSAT-AD-Tools -ComputerName PW01 -IncludeAllSubFeature -NoDisplay
 
 #region Post-Deployment tasks
@@ -74,7 +78,8 @@ break
 
 # Copy module and role-capabilities to remote session
 $sessionToRestrict = New-LabPSSession -ComputerName PW01
-Send-ModuleToPSSession -Module (Get-Module PasswordEndpoint -ListAvailable) -Session $sessionToRestrict
+Send-ModuleToPSSession -Module (Get-Module PasswordEndpoint -ListAvailable) `
+-Session $sessionToRestrict
 
 # New Session configuration
 Invoke-Command -Session $sessionToRestrict -ScriptBlock {

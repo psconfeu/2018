@@ -52,7 +52,7 @@ function Get-Password
     }
     
     $user = Get-ADUser -Identity $userName
-    $userDn = $user.distinguishedname -replace ',',', '
+    $userDn = $user.distinguishedname -replace ',', ', '
     return ($content | Unprotect-CmsMessage | Protect-CmsMessage -To $userDn)
 }
 
@@ -115,7 +115,12 @@ function Remove-Password
         $Prefix
     )
 
-    $filePath = Join-Path -Path (Join-Path -Path $dataFilePath -ChildPath $Prefix) -ChildPath $ObjectName
+    $filePath = Join-Path -Path $dataFilePath -ChildPath $ObjectName
+    
+    if ($Prefix)
+    {
+        $filePath = Join-Path -Path (Join-Path -Path $dataFilePath -ChildPath $Prefix) -ChildPath $ObjectName
+    }
 
     if (Test-Path -Path $filePath)
     {

@@ -8,7 +8,7 @@ function Request-ADOfflineDomainJoin
  
         [string]$OrganizationalUnit,
  
-        [string]$Server = 'zMgmtLan.contoso.com',
+        [string]$Server = 'ODJDC01.contoso.com',
  
         [switch]$PrepopulatePassword
     )
