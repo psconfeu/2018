@@ -1,0 +1,129 @@
+{
+    "AspNet35Status":  "Present",
+    "ApplicationPools":  {
+                             "applicationPools":  [
+                                                      "DefaultAppPool",
+                                                      ".NET v4.5 Classic",
+                                                      ".NET v4.5",
+                                                      "Pester"
+                                                  ],
+                             "applicationPoolDefaults":  {
+                                                             "managedRuntimeVersion":  "v4.0",
+                                                             "processModel":  {
+                                                                                  "identityType":  "ApplicationPoolIdentity"
+                                                                              }
+                                                         }
+                         },
+    "ApplicationDefaults":  [
+
+                            ],
+    "SiteDefaults":  [
+                         [
+
+                         ],
+                         [
+
+                         ]
+                     ],
+    "Websites":  [
+                     {
+                         "Name":  "Default Web Site",
+                         "ID":  "1",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  null,
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "C:\\inetpub\\wwwroot"
+                                                                             }
+                                                                         ]
+                                              },
+                                              {
+                                                  "Path":  "/Rpc",
+                                                  "ApplicationPool":  "DefaultAppPool",
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "%windir%\\System32\\RpcProxy"
+                                                                             }
+                                                                         ]
+                                              },
+                                              {
+                                                  "Path":  "/RpcWithCert",
+                                                  "ApplicationPool":  "DefaultAppPool",
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "%windir%\\System32\\RpcProxy"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "http",
+                                              "BindingInformation":  "*:80:"
+                                          },
+                                          {
+                                              "Protocol":  "https",
+                                              "BindingInformation":  "*:443:"
+                                          }
+                                      ]
+                     },
+                     {
+                         "Name":  "Pester",
+                         "ID":  "2",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  "Pester",
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "D:\\inetpub\\Pester"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "http",
+                                              "BindingInformation":  "*:80:pester.rbk.ad"
+                                          }
+                                      ]
+                     },
+                     {
+                         "Name":  "Foscam",
+                         "ID":  "3",
+                         "Applications":  [
+                                              {
+                                                  "Path":  "/",
+                                                  "ApplicationPool":  null,
+                                                  "VirtualDirectories":  [
+                                                                             {
+                                                                                 "Path":  "/",
+                                                                                 "PhysicalPath":  "D:\\FTP\\Foscam"
+                                                                             }
+                                                                         ]
+                                              }
+                                          ],
+                         "Bindings":  [
+                                          {
+                                              "Protocol":  "ftp",
+                                              "BindingInformation":  "*:21:"
+                                          }
+                                      ]
+                     }
+                 ],
+    "AspNetStatus":  "Present",
+    "FeatureName":  "IIS-ApplicationDevelopment;IIS-ASPNET45;IIS-BasicAuthentication;IIS-ClientCertificateMappingAuthentication;IIS-CommonHttpFeatures;IIS-DefaultDocument;IIS-DirectoryBrowsing;IIS-FTPExtensibility;IIS-FTPServer;IIS-FTPSvc;IIS-HealthAndDiagnostics;IIS-HttpCompressionStatic;IIS-HttpErrors;IIS-HttpLogging;IIS-HttpRedirect;IIS-HttpTracing;IIS-ISAPIExtensions;IIS-ISAPIFilter;IIS-LegacySnapIn;IIS-LoggingLibraries;IIS-Metabase;IIS-NetFxExtensibility45;IIS-Performance;IIS-RequestFiltering;IIS-RequestMonitor;IIS-Security;IIS-StaticContent;IIS-WebServer;IIS-WebServerRole;IIS-WindowsAuthentication;NetFx4Extended-ASPNET45",
+    "VirtualDirectoryDefaults":  [
+
+                                 ],
+    "Status":  "Present",
+    "HttpHandlers":  [
+
+                     ]
+}
