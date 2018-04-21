@@ -1,0 +1,131 @@
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>SuperHero</Name>
+      <ViewSelectedBy>
+        <TypeName>SuperHero</TypeName>
+      </ViewSelectedBy>
+      <Controls>
+        <Control>
+          <Name>NameDesc</Name>
+          <CustomControl>
+            <CustomEntries>
+              <CustomEntry>
+                <CustomItem>
+                  <ExpressionBinding>
+                    <PropertyName>Name</PropertyName>
+                  </ExpressionBinding>
+                  <Text>:</Text>
+                  <Newline/>
+                  <Frame>
+                    <LeftIndent>2</LeftIndent>
+                    <CustomItem>
+                      <ExpressionBinding>
+                      <!-- Whoa! What is going on here? XML encoding wrapping regex ! -->
+                      <!-- Mathias Jessen @IISResetMe is our goto guy ! -->
+                        <ScriptBlock>$_.Description -split "(?&lt;=\G.{40,} )" -join "`n"</ScriptBlock>
+                      </ExpressionBinding>
+                      <Newline/>
+                      <!-- <Newline/> is needed or the indentation will be messed up -->
+                    </CustomItem>
+                  </Frame>
+                  <Newline/>
+                </CustomItem>
+              </CustomEntry>
+            </CustomEntries>
+          </CustomControl>
+        </Control>
+        <Control>
+          <Name>NameDescCollection</Name>
+          <CustomControl>
+            <CustomEntries>
+              <CustomEntry>
+                <CustomItem>
+                  <ExpressionBinding>
+                    <EnumerateCollection/>
+                    <CustomControlName>NameDesc</CustomControlName>
+                  </ExpressionBinding>
+                  <Newline/>
+                </CustomItem>
+              </CustomEntry>
+            </CustomEntries>
+          </CustomControl>
+        </Control>
+      </Controls>
+      <CustomControl>
+        <CustomEntries>
+          <CustomEntry>
+            <CustomItem>
+              <Text>Here comes the hero &#x1b;[97m</Text>
+              <ExpressionBinding>
+                <PropertyName>Name</PropertyName>
+              </ExpressionBinding>
+              <Text>&#x1b;[39m</Text>
+              <Newline/>
+              <Frame>
+                <LeftIndent>2</LeftIndent>
+                <CustomItem>
+                  <ExpressionBinding>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Power -and $_.Power.Count</ScriptBlock></ItemSelectionCondition>
+                    <ScriptBlock>"`e[92mPowers:`e[39m"</ScriptBlock>
+                  </ExpressionBinding>
+                  <NewLine/>
+                  <Frame>
+                    <LeftIndent>2</LeftIndent>
+                    <CustomItem>
+                      <ExpressionBinding>
+                        <ItemSelectionCondition><ScriptBlock>$null -ne $_.Power -and $_.Power.Count</ScriptBlock></ItemSelectionCondition>
+                        <PropertyName>Power</PropertyName>
+                        <CustomControlName>NameDescCollection</CustomControlName>
+                      </ExpressionBinding>
+                    </CustomItem>
+                  </Frame>
+                </CustomItem>
+              </Frame>
+              <Frame>
+                <LeftIndent>2</LeftIndent>
+                <CustomItem>
+                <!-- example of how to write a color in text, not a scriptblock -->
+                  <Text>&#x1b;[93mAbilities:&#x1b;[39m</Text>
+                  <NewLine/>
+                  <Frame>
+                    <LeftIndent>2</LeftIndent>
+                    <CustomItem>
+                      <ExpressionBinding>
+                        <ItemSelectionCondition><ScriptBlock>$null -ne $_.Ability -and $_.Ability.Count</ScriptBlock></ItemSelectionCondition>
+                        <!-- note the recursive use of formatting to output Abilities as a list -->
+                        <ScriptBlock>$_.Ability | Format-List | out-string -width 80</ScriptBlock>
+                      </ExpressionBinding>
+                      <Newline/>
+                    </CustomItem>
+                  </Frame>
+                </CustomItem>
+              </Frame>
+              <Frame>
+                <LeftIndent>2</LeftIndent>
+                <CustomItem>
+                  <ExpressionBinding>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Weakness -and $_.Weakness.Count</ScriptBlock></ItemSelectionCondition>
+                    <ScriptBlock>"`e[91mWeakness:`e[39m"</ScriptBlock>
+                  </ExpressionBinding>
+                  <NewLine/>
+                  <Frame>
+                    <LeftIndent>2</LeftIndent>
+                    <CustomItem>
+                      <ExpressionBinding>
+                        <ItemSelectionCondition><ScriptBlock>$null -ne $_.Weakness -and $_.Weakness.Count</ScriptBlock></ItemSelectionCondition>
+                        <!-- note the recursive use of formatting to format this item as a table -->
+                        <ScriptBlock>$_.Weakness | Format-Table -wrap | out-string -width 100</ScriptBlock>
+                      </ExpressionBinding>
+                      <Newline/>
+                    </CustomItem>
+                  </Frame>
+                </CustomItem>
+              </Frame>
+            </CustomItem>
+          </CustomEntry>
+        </CustomEntries>
+      </CustomControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>

@@ -1,0 +1,45 @@
+<!--
+From @lzybkr
+https://gist.github.com/lzybkr/eddc79020dfddc821782cfce8b671f05
+ -->
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>Measure-Object-Output</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.PowerShell.Commands.GenericMeasureInfo</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+                <ListItem>
+                    <PropertyName>Count</PropertyName>
+                </ListItem>
+                <ListItem>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Average</ScriptBlock></ItemSelectionCondition>
+                    <PropertyName>Average</PropertyName>
+                </ListItem>
+                <ListItem>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Sum</ScriptBlock></ItemSelectionCondition>
+                    <PropertyName>Sum</PropertyName>
+                </ListItem>
+                <ListItem>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Maximum</ScriptBlock></ItemSelectionCondition>
+                    <PropertyName>Maximum</PropertyName>
+                </ListItem>
+                <ListItem>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Minimum</ScriptBlock></ItemSelectionCondition>
+                    <PropertyName>Minimum</PropertyName>
+                </ListItem>
+                <ListItem>
+                    <ItemSelectionCondition><ScriptBlock>$null -ne $_.Property</ScriptBlock></ItemSelectionCondition>
+                    <PropertyName>Property</PropertyName>
+                </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>

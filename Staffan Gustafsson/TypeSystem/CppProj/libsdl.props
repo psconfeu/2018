@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <SDLPlatform>x86</SDLPlatform>
+    <SDLPlatform Condition="'$(Plastform)' == 'x64'">x64</SDLPlatform>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)\SDL2-2.0.1\include;$(MSBuildThisFileDirectory)\SDL2_image-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)\SDL2-2.0.1\lib\$(SDLPlatform);$(MSBuildThisFileDirectory)\SDL2_image-2.0.0\lib\$(SDLPlatform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+
+  <Target Name="CopySDLDll" AfterTargets="Build" Condition="'$(ConfigurationType)' != 'StaticLibrary'">
+    <ItemGroup>
+      <SDL_Dll Include="$(MSBuildThisFileDirectory)\SDL2-2.0.1\lib\$(SDLPlatform)\SDL2.dll"/>
+      <SDL_Dll Include="$(MSBuildThisFileDirectory)\SDL2_image-2.0.0\lib\$(SDLPlatform)\*.dll"/>
+    </ItemGroup>
+    <Copy SourceFiles="@(SDL_Dll)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

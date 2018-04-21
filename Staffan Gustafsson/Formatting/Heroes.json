@@ -1,0 +1,107 @@
+[
+    {
+        "Name": "Dare Devil",
+        "AlterEgo": "Matt Murdock",
+        "PlaceOfBirth": "New York City, New York",
+        "Gender": "Male",
+        "Height": 183,
+        "Weight": 90,
+        "Power": [
+            {
+                "Name": "Superhuman Sense of Touch",
+                "Description": "Daredevil's sense of touch is so acute that his finger can feel the faint impressions of ink on a printed page, allowing him to read by touch. The rest of his skin is equally sensitive, enabling him by concentration to feel minute temperature and pressure changes in the atmosphere around him. Even with his senses of smell and hearing blocked, he can feel the presence of a person standing five feet away from him simply by his or her body heat and disturbance of air. A side effect of his sense of touch is Daredevil's ability to manipulate his muscles and internal organs. The sense of touch is not just external, but internal too (central nervous system), thereby giving him the ability to have total body control, increasing his strength and reflexes to near peak human levels and increasing his agility to enhanced human levels."
+            },
+            {
+                "Name": "Superhuman Sense of Smell",
+                "Description": "Daredevil's sense of smell is so acute that he can distinguish between identical twins at twenty feet by minute differences in smell. He can detect odors of an atmospheric concentration of thirty parts per million. Further, his ability to remember smells enables him to identify any person he has spent at least five minutes with by smell alone, no matter how he or she might try to camouflage his or her natural odor. His powers of concentration are such that he can focus upon a single person's smell and follow it through a crowd of people at a distance of fifty feet."
+            }
+        ],
+        "Ability": [
+            {
+                "Name": "Gifted Intellect",
+                "Description": "Matt has a high IQ; he's an accomplished strategist as well as an expert in interrogation, disguise, medicine, science and detective work. "
+            },
+            {
+                "Name": "Expert Detective",
+                "Description": "Daredevil has shown to be an expert detective using his intellect to figure out complex problems and hyper-senses to find clues and evidence to crime scenes. "
+            }
+        ],
+        "Weakness": [
+            {
+                "Name": "Radar Sense Limitations",
+                "Description": "Daredevil is unable to discern pictures or video images, and he can only guess at colors based on the amount of heat they are absorbing or reflecting. If anyone or anything is not emitting anything that would trigger his heightened senses Daredevil wouldn't be able to detect it, such as Mysterio's hallucinogenic toxin, which was devoid of taste or smell, or prior to his capture by the F.B.I., when a sniper bullet fired outside the range of his sense of hearing was able to badly injure him."
+            },
+            {
+                "Name": "Radar Sense Disruption",
+                "Description": "Daredevil's superhuman senses render him extraordinarily vulnerable to excessive sound, odors, etc., which can temporarily weaken his Radar Sense or if he is bombarded by too much sound at once, Daredevil can easily be immobilized, which causes him great pain and leaves him disoriented. Once the disruptive effects wear off, Daredevil's Radar Sense is able to return to its normal calibration."
+            }
+        ]
+    },
+    {
+        "Name": "Spider-Man",
+        "AlterEgo": "Peter Parker",
+        "PlaceOfBirth": "Queens (New York City, New York)",
+        "Gender": "Male",
+        "Height": 178,
+        "Weight": 74,
+        "Power": [
+            {
+                "Name": "Superhuman Strengh",
+                "Description": "Peter has superhuman strength (able to lift 10 tons optimally) and is roughly 15 times more agile than a regular human. The combination of his acrobatic leaps and web-slinging enables him to travel rapidly from place to place. "
+            },
+            {
+                "Name": "Spider sense",
+                "Description": "His spider-sense provides an early warning detection system linked with his superhuman kinesthetics, enabling him the ability to evade most any injury, provided he doesn't cognitively override the autonomic reflexes."
+            },
+            {
+                "Name": "Cling to surfaces",
+                "Description": "Peter can cling to most surfaces."
+            }
+        ],
+        "Ability": [
+            {
+                "Name": "Gifted Intellect",
+                "Description": "Peter is an accomplished scientist, inventor and photographer."
+            }
+        ],
+        "Weakness": []
+    },
+    {
+        "Name": "Wonder Woman",
+        "AlterEgo": "Diana of Themyscira",
+        "PlaceOfBirth": "Themyscira",
+        "Gender": "Female",
+        "Height": 183,
+        "Weight": 74,
+        "Power": [
+            {
+                "Name": "Divine Empowerment",
+                "Description": "Directly after being sculpted from clay, several Olympian gods granted attributes to Diana."
+            },
+            {
+                "Name": "Superhuman Strength",
+                "Description": "Granted by Demeter (Goddess of the Earth). Diana is literally as strong as the Earth because of her link to the planet granted to her by Demeter. She is said to be \"stronger than Hercules\". Wonder Woman is as strong as Superman himself and able to physically outmatch other beings such as Supergirl."
+            },
+            {
+                "Name": "Superhuman Durability",
+                "Description": "Granted by Demeter (Goddess of the Earth). Diana possesses a high resistance to damage and magical attacks. Her resistance to injury is not quite as great as any of the above mentioned metahumans. However, due to her vast threshold for pain and her amazon ability to heal at a superhuman rate, this easily makes up for the difference. She has withstood considerable bludgeoning damage in the form of hand to hand combat with metahuman opponents such as Superman and Captain Marvel. She has considerable resistance to human weaponries, though this is not absolute; Bullets can cause minor to moderate injury, but never life threatening."
+            }
+        ],
+        "Ability": [
+            {
+                "Name": "Hand-to-Hand Combat (Advanced)",
+                "Description": "Diana is the finest warrior ever born among the Amazons of Themyscira. She is a master of armed and unarmed combat, proficient with nearly every weapon ever made (especially the bow and the javelin) and the exotic martial arts styles of the Amazons. Batman once remarked that Wonder Woman is the best melee fighter in the world."
+            },
+            {
+                "Name": "Wisdom of Athena",
+                "Description": "Granted by Athena (Goddess of Wisdom). Diana possesses great wisdom and intelligence, though the degree varies from author to author. She is among the smartest and wisest members of the Justice League of America, along with the Martian Manhunter and Batman."
+            }
+        ],
+        "Weakness": [
+            {
+                "Name": "Vulnerability to Piercing Weapons",
+                "Description": "Diana is extremely resistant to blunt force attacks and has a vast tolerance for pain. However, she is more vulnerable to piercing weapons, such as arrows and bullets."
+            }
+        ]
+    }
+]
