@@ -1,0 +1,12 @@
+These are the new release notes for this amazing module
+
+There are a number of important changes in this release as this time it is
+
+    - Much Newer
+    - Extra amazingly More Magical
+    - Just So much better than the previous version - Really it is
+    - It has many new features and everything
+    - and it was demoed in 5 minutes
+
+
+Was first demonstrated in Singapore at DevOps Days
