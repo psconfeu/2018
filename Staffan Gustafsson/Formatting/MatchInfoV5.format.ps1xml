@@ -1,0 +1,249 @@
+﻿<!-- Original idea from @lzybkr
+https://gist.github.com/lzybkr/dcb973dccd54900b67783c48083c28f7
+-->
+<Configuration>
+<ViewDefinitions>
+<View>
+<Name>color</Name>
+<ViewSelectedBy>
+<TypeName>Microsoft.PowerShell.Commands.MatchInfo</TypeName>
+</ViewSelectedBy>
+<CustomControl>
+<CustomEntries>
+<CustomEntry>
+<CustomItem>
+<ExpressionBinding>
+<ScriptBlock>
+[string]$curDir = $pwd.Path
+if (!$host.UI.SupportsVirtualTerminal) {
+    $_.ToString($curDir)
+    return
+}
+
+class MatchGroupInfo : System.IComparable {
+    [bool] $IsStart
+    [int] $GroupId
+    [int] $Index
+    [string] $Color
+
+    static [string] $noColor = "`e[0m"
+    static [string] $dgray = "`e[90m"
+    static [string] $lred = "`e[91m"
+    static [string] $lgreen = "`e[92m"
+    static [string] $lyellow = "`e[93m"
+    static [string] $lblue = "`e[94m"
+    static [string] $lmagenta = "`e[95m"
+    static [string] $lcyan = "`e[96m"
+
+    hidden static [string[]] $_groupColors =
+    [MatchGroupInfo]::noColor,
+    [MatchGroupInfo]::lyellow,
+    [MatchGroupInfo]::lmagenta,
+    [MatchGroupInfo]::lcyan,
+    [MatchGroupInfo]::dgray,
+    [MatchGroupInfo]::lblue,
+    [MatchGroupInfo]::lgreen,
+    [MatchGroupInfo]::lred
+
+    hidden static [hashtable] $_colorNameToColor = @{
+        nocolor = [MatchGroupInfo]::noColor
+        yellow  = [MatchGroupInfo]::lyellow
+        ye      = [MatchGroupInfo]::lyellow
+        magenta = [MatchGroupInfo]::lmagenta
+        ma      = [MatchGroupInfo]::lmagenta
+        cyan    = [MatchGroupInfo]::lcyan
+        cy      = [MatchGroupInfo]::lcyan
+        gray    = [MatchGroupInfo]::dgray
+        gy      = [MatchGroupInfo]::dgray
+        blue    = [MatchGroupInfo]::lblue
+        bl      = [MatchGroupInfo]::lblue
+        green   = [MatchGroupInfo]::lgreen
+        gn      = [MatchGroupInfo]::lgreen
+        red     = [MatchGroupInfo]::lred
+        re      = [MatchGroupInfo]::lred
+    }
+    hidden static [string[]] $_colorNames = 'ye', 'yellow', 'gy', 'red', 're', 'bl', 'gn', 'nocolor', 'magenta', 'gray', 'green', 'blue', 'ma', 'cy', 'cyan'
+
+    [string] ToString() {
+        if ($this.IsStart) {
+            return "Start of {0} at {1}" -f $this.GroupId, $this.Index
+        }
+        else {
+            return "End of {0} at {1}" -f $this.GroupId, $this.Index
+        }
+    }
+
+    MatchGroupInfo([int] $Index, [int] $GroupId, [bool] $IsStart) {
+        $this.Index = $Index
+        $this.GroupId = $GroupId
+        $this.IsStart = $IsStart
+        $this.Color = [MatchGroupInfo]::noColor
+    }
+
+    MatchGroupInfo([int] $Index, [int] $GroupId, [bool] $IsStart, [string] $Color) {
+        $this.Index = $Index
+        $this.GroupId = $GroupId
+        $this.IsStart = $IsStart
+        $this.Color = $color
+    }
+
+    [int] CompareTo([object]$obj) {
+        [MatchGroupInfo] $other = $obj
+        $res = $this.Index.CompareTo($other.Index)
+        if ($res -ne 0) {
+            return $res
+        }
+        if (!$this.IsStart -and !$other.IsStart) {
+            $res = $other.GroupId.CompareTo($this.GroupId)
+        }
+        else {
+            $res = $this.GroupId.CompareTo($other.GroupId)
+        }
+        if ($res -ne 0) {
+            return $res
+        }
+        $res = $this.IsStart.CompareTo($other.IsStart)
+        return - $res
+    }
+
+    static [string] GetGroupColor([int] $index) {
+        $len = [MatchGroupInfo]::_groupColors.Length
+        if ($index -ge $len) {
+            $retVal = [MatchGroupInfo]::_groupColors[$len - 1]
+        }
+        else {
+            $retVal = [MatchGroupInfo]::_groupColors[$index]
+        }
+        Write-Debug "$index -> $($retVal.SubString(1))"
+        return $retVal
+    }
+
+    static [string] GetGroupColor([string] $groupName) {
+        $local:color = [MatchGroupInfo]::_colorNameToColor[$groupName]
+        if ($color) {
+            return $color
+        }
+        return [MatchGroupInfo]::noColor
+    }
+
+    static [System.Collections.Generic.List[MatchGroupInfo]] GetGroupInfo([Microsoft.PowerShell.Commands.MatchInfo] $matchInfo) {
+        $text = $matchInfo.Line
+        [regex] $re = $matchInfo.Pattern
+        $namedColors = if ($matchInfo.Matches[0].Groups.Count -eq 1) {
+            $false
+        }
+        else {
+            $groupNames = [System.Linq.Enumerable]::Skip($re.GetGroupNames(), 1)
+            [System.Linq.Enumerable]::All($groupNames, [Func[string, bool]] {param([string]$s)$s -in [MatchGroupInfo]::_colorNames})
+        }
+        $matchList = [System.Collections.Generic.List[MatchGroupInfo]]::new($MatchInfo.Matches[0].Groups.Count)
+        $matchList.Add([MatchGroupInfo]::new(0, 0, $true))
+        for ($i = 0; $i -lt $matchInfo.Matches[0].Groups.Count; $i++) {
+            $g = $matchInfo.Matches[0].Groups[$i]
+            [string] $local:color = if ($namedColors) {
+                $groupName = $re.GroupNameFromNumber($i)
+                [MatchGroupInfo]::GetGroupColor($groupName)
+            }
+            else {
+                [MatchGroupInfo]::GetGroupColor($i + 1)
+            }
+            $matchList.Add([MatchGroupInfo]::new($g.Index, $i + 1, $true, $color))
+            $matchList.Add([MatchGroupInfo]::new($g.Index + $g.Length, $i + 1, $false))
+        }
+        $matchList.Sort()
+        $matchList.Add([MatchGroupInfo]::new($text.Length, 0, $false))
+
+        return $matchList
+    }
+
+    static [string] FormatMatchInfo([Microsoft.PowerShell.Commands.MatchInfo] $matchInfo) {
+
+        $sb = [System.Text.StringBuilder]::new()
+        $text = $matchInfo.Line
+        $sb.Capacity = $matchInfo.Line.Length * 2
+
+        $matchList = [MatchGroupInfo]::GetGroupInfo($matchInfo)
+
+        $colorStack = [System.Collections.Generic.Stack[string]]::new()
+
+        for ($j = 0; $j -le $matchList.Count - 2; $j++) {
+            $currentInfo = $matchList[$j]
+            $end = $matchList[$j + 1].Index
+            $startIndex = $currentInfo.Index
+            $length = $end - $startIndex
+
+            if ($currentInfo.IsStart) {
+                $c = $currentInfo.Color
+                $colorStack.Push($c)
+                if ($length -ne 0) {
+                    if ($j -ne 0) {
+                        $sb.Append($c)
+                    }
+                    $t = $text.SubString($startIndex, $length)
+                    $sb.Append($t)
+                }
+            }
+            else {
+                $colorStack.Pop()
+                $c = $colorStack.Peek()
+
+                if ($length -gt 0) {
+                    $t = $text.SubString($startIndex, $length)
+                    $sb.Append($c)
+                    $sb.Append($t)
+                }
+            }
+
+        }
+
+        $sb.Append([MatchGroupInfo]::noColor)
+        return $sb.ToString()
+    }
+}
+
+
+function FormatLine($matchInfo, [string]$line, [int]$lineNumber, [string]$displayPath, [string]$prefix, [switch]$isMatchLine) {
+    if ($isMatchLine) {
+        $line = [MatchGroupInfo]::FormatMatchinfo($matchInfo)
+    }
+
+    if ($matchInfo.Path -ne 'InputStream') {
+        "{0}{1}:{2}:{3}" -f $prefix, $displayPath, $lineNumber, $line
+    }
+    else {
+        "{0}{1}" -f $prefix, $line
+    }
+}
+
+$displayPath = if ('' -eq $curDir) { $_.Path } else { $_.RelativePath($curDir) }
+if ($null -eq $_.Context) {
+    FormatLine -MatchInfo $_ -Line $_.Line -LineNumber $_.LineNumber -DisplayPath $displayPath -Prefix "" -IsMatchLine
+}
+else {
+    $lines = . {
+        $displayLineNumber = $_.LineNumber - $_.Context.DisplayPreContext.Length;
+        foreach ($contextLine in $_.Context.DisplayPreContext) {
+            FormatLine -MatchInfo $_ -Line $contextLine -LineNumber $displayLineNumber -DisplayPath $displayPath -Prefix "  "
+            $displayLineNumber += 1
+        }
+
+        FormatLine -MatchInfo $_ -Line $_.Line -LineNumber $displayLineNumber -DisplayPath $displayPath -Prefix "> " -IsMatchLine
+        $displayLineNumber += 1
+
+        foreach ($contextLine in $_.Context.DisplayPostContext) {
+            FormatLine -MatchInfo $_ -Line $contextLine -LineNumber $displayLineNumber -DisplayPath $displayPath -Prefix "  "
+            $displayLineNumber += 1
+        }
+    }
+
+    $lines -join ([Environment]::Newline)
+}
+</ScriptBlock>
+</ExpressionBinding>
+</CustomItem>
+</CustomEntry>
+</CustomEntries>
+</CustomControl>
+</View>
+</ViewDefinitions>
+</Configuration>
