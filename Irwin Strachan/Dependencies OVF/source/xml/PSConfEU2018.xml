@@ -1,0 +1,248 @@
+﻿<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="MailNickName">hassing</S>
+      <S N="PostalCode">4153 BX</S>
+      <S N="Surname">Mateman</S>
+      <S N="City">Beesd</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">hassing@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Tiede</S>
+      <Obj N="PasswordProfile" RefId="1">
+        <TN RefId="1">
+          <T>Microsoft.Open.AzureAD.Model.PasswordProfile</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>class PasswordProfile {_x000A_  Password: Yul3pah6ue_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">Yul3pah6ue</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Koningin Julianastraat 17</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Tiede Mateman</S>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">snest1997</S>
+      <S N="PostalCode">2802 AN</S>
+      <S N="Surname">Rullens</S>
+      <S N="City">Gouda</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">snest1997@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Yenthe</S>
+      <Obj N="PasswordProfile" RefId="3">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: Toujoo9mohw_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">Toujoo9mohw</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Nieuwe Gouwe Westzijde 57</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Yenthe Rullens</S>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">stioser</S>
+      <S N="PostalCode">1053 AN</S>
+      <S N="Surname">Honsbeek</S>
+      <S N="City">Amsterdam</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">stioser@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Naïm</S>
+      <Obj N="PasswordProfile" RefId="5">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: uQuiakie1ah_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">uQuiakie1ah</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Agatha Dekenstraat 35</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Naïm Honsbeek</S>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">deepiefface</S>
+      <S N="PostalCode">5374 DB</S>
+      <S N="Surname">Meekel</S>
+      <S N="City">Schaijk</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">deepiefface@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Bruna</S>
+      <Obj N="PasswordProfile" RefId="7">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: Eivait2Ah_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">Eivait2Ah</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Akkerwinde 142</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Bruna Meekel</S>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">fectilourn</S>
+      <S N="PostalCode">6411 KM</S>
+      <S N="Surname">Barentsen</S>
+      <S N="City">Heerlen</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">fectilourn@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Rony</S>
+      <Obj N="PasswordProfile" RefId="9">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: Ee9ahza1y_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">Ee9ahza1y</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Broeder Aloysiusstraat 43</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Rony Barentsen</S>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">forn1959</S>
+      <S N="PostalCode">2957 JE</S>
+      <S N="Surname">Mook</S>
+      <S N="City">Nieuw-Lekkerland</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">forn1959@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Abderrahmane</S>
+      <Obj N="PasswordProfile" RefId="11">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: aengohC6oh_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">aengohC6oh</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Wipmolen 15</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Abderrahmane Mook</S>
+    </MS>
+  </Obj>
+  <Obj RefId="12">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">fackither</S>
+      <S N="PostalCode">2182 ZS</S>
+      <S N="Surname">de Swart</S>
+      <S N="City">Hillegom</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">fackither@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Lindy</S>
+      <Obj N="PasswordProfile" RefId="13">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: Jeedoh0Die_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">Jeedoh0Die</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Willem Elsschotsingel 192</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Lindy de Swart</S>
+    </MS>
+  </Obj>
+  <Obj RefId="14">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">surriess</S>
+      <S N="PostalCode">6521 ES</S>
+      <S N="Surname">van der List</S>
+      <S N="City">Nijmegen</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">surriess@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Fatna</S>
+      <Obj N="PasswordProfile" RefId="15">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: oof5lohxieG_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">oof5lohxieG</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Koolemans Beynenstraat 147</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Fatna van der List</S>
+    </MS>
+  </Obj>
+  <Obj RefId="16">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">hatearne</S>
+      <S N="PostalCode">7642 VA</S>
+      <S N="Surname">van der Geest</S>
+      <S N="City">Wierden</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">hatearne@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">Steyn</S>
+      <Obj N="PasswordProfile" RefId="17">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: tieZo7Ai_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">tieZo7Ai</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Larixlaan 152</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">Steyn van der Geest</S>
+    </MS>
+  </Obj>
+  <Obj RefId="18">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="MailNickName">tromis</S>
+      <S N="PostalCode">3911 SJ</S>
+      <S N="Surname">Coppoolse</S>
+      <S N="City">Rhenen</S>
+      <B N="AccountEnabled">true</B>
+      <S N="UserPrincipalName">tromis@irwinstrachangmail.onmicrosoft.com</S>
+      <S N="GivenName">April</S>
+      <Obj N="PasswordProfile" RefId="19">
+        <TNRef RefId="1" />
+        <ToString>class PasswordProfile {_x000A_  Password: jeiJ4eeTh_x000A_  ForceChangePasswordNextLogin: True_x000A_  EnforceChangePasswordPolicy: True_x000A_}_x000A_</ToString>
+        <Props>
+          <S N="Password">jeiJ4eeTh</S>
+          <B N="ForceChangePasswordNextLogin">true</B>
+          <B N="EnforceChangePasswordPolicy">true</B>
+        </Props>
+      </Obj>
+      <S N="StreetAddress">Ruiterpad 161</S>
+      <S N="Country">NL</S>
+      <S N="DisplayName">April Coppoolse</S>
+    </MS>
+  </Obj>
+</Objs>
