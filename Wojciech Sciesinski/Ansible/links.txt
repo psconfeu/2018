@@ -1,0 +1,79 @@
+Best practices - Directory layout - Ansible Documentation
+https://docs.ansible.com/ansible/devel/user_guide/playbooks_best_practices.html#directory-layout
+http://bit.ly/2EvfHr3
+
+Installing the Control Machine - Ansible Documentation
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-the-control-machine
+http://bit.ly/2GJZ80Q
+
+Python library for Windows Remote Management (WinRM)
+https://github.com/diyan/pywinrm/
+http://bit.ly/2qdH2Jy
+
+Ansible Silo
+https://github.com/groupon/ansible-silo
+http://bit.ly/2hbaLS4
+
+Windows Guides - Ansible Documention
+https://docs.ansible.com/ansible/devel/user_guide/windows.html
+http://bit.ly/2pZVFQt
+
+Configure a Windows host for remote management with Ansible - an example from the Ansible repository
+https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1
+http://bit.ly/2IAoJ8G
+
+Ansible module_utils - PowerShell
+https://github.com/ansible/ansible/tree/devel/lib/ansible/module_utils/powershell
+http://bit.ly/2K08SSl
+
+Ansible.ModuleUtils.Legacy.psm1
+https://github.com/ansible/ansible/blob/devel/lib/ansible/module_utils/powershell/Ansible.ModuleUtils.Legacy.psm1
+http://bit.ly/2uVOmyQ
+
+Windows Modules list
+https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html
+http://bit.ly/2HLJGyv
+
+PSSlmgr PowerShell module
+https://github.com/it-praktyk/PSSlmgr
+http://bit.ly/2uS8VMF
+
+Ansible win_psslmgr_rearm module
+https://github.com/it-praktyk/ansible-win_psslmgr_rearm
+http://bit.ly/2qNBvt8
+
+Documenting Your Module
+https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html
+http://bit.ly/2HcrFrL
+
+Using Ansible and Windows
+https://docs.ansible.com/ansible/latest/user_guide/windows_usage.html
+http://bit.ly/2JeS3mk
+
+Windows Ansible Module Development Walkthrough
+https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_general_windows.html
+http://bit.ly/2q1tscE
+
+Ansible Community - Windows Working Group
+https://github.com/ansible/community/tree/master/group-windows
+http://bit.ly/2pW8jRq
+
+Awesome Ansible
+https://github.com/jdauphant/awesome-ansible
+http://bit.ly/2ESUhp9
+
+RIOT
+https://riot.im
+
+Ansible Module Development 101 - Matt Daviss
+https://www.ansible.com/ansible-module-development-101
+http://bit.ly/2JrG7hl
+
+Writing Modules Deep Dive - James Cammarata
+https://www.ansible.com/writing-modules-deep-dive
+http://bit.ly/2HgB8z7
+
+Ten Things I Hate About You: Manage Windows Like Linux with Ansible - Jordan Borean
+https://www.ansible.com/videos-ansible-automates-manage-windows-like-linux-with-ansible-feb-2018
+http://bit.ly/2GLOouU
+

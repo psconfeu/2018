@@ -1,0 +1,21 @@
+git clone https://github.com/it-praktyk/PSSlmgr.git PSSlmgr
+
+cd PSSlmgr
+
+#The state exact like at PSConfEU
+git checkout bcbd3c23d248075148ae91a322ba613c27878279
+
+#Prefered state - demos fully functional
+git checkout 316d480ad25728decf5558d0e119a771065c6c6a
+
+cd ../
+
+git clone https://github.com/it-praktyk/ansible-win_psslmgr_rearm ansible-win_psslmgr_rearm
+
+cd ansible-win_psslmgr_rearm
+
+git checkout b460c553e9effc0f2219697c9d1c8dd79682c67f
+
+cp win_psslmgr_rearm.p* ../Demo-3/library/
+
+cd ../

@@ -1,0 +1,27 @@
+git clone https://github.com/it-praktyk/New-OutputObject.git New-OutputObject-before
+
+cd New-OutputObject-before
+
+git checkout 3babab5a70abb6c322f579642c2a794b49402670
+
+cd ../
+
+git clone https://github.com/it-praktyk/New-OutputObject.git New-OutputObject-after
+
+cd New-OutputObject-after
+
+git checkout db9e975b7786f0d91dda71ad7ed01249ad7bf380
+
+cd ../
+
+import-module pester -MinimumVersion 4.1.0
+
+cd New-OutputObject-before
+
+Invoke-pester
+
+cd ../
+
+cd New-OutputObject-after
+
+Invoke-pester

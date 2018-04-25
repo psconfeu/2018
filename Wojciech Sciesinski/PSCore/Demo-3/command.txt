@@ -1,0 +1,1 @@
+./Start-Demo.ps1 -FullAuto -SkipInstructions -DelayAfterComment 3 -SkipAddDemoTime -SkipAddTheEndLine

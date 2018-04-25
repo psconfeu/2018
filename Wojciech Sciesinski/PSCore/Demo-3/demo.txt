@@ -1,0 +1,32 @@
+#Demo file to use with Start-Demo.ps1 http://poshcode.org/6399
+#Import module New-OutputObject
+Import-Module -Name New-OutputObject -Verbose
+#Display provided cmdlets
+Get-Command -Module New-OutputObject
+#Prepare object - type: file
+$OutputFile = (New-OutputFile).OutputFilePath
+#Display properties of object
+$OutputFile | Format-List
+#Prepare object - type: folder
+$OutputFolder = (New-OutputFolder).OutputFolderPath
+#Display properties of object
+$OutputFolder  | Format-List
+#The prepare file object has property like normal file
+New-OutputFile | Select-Object -ExpandProperty OutputFilePath
+#Because the objest is type System.IO.FileInfo
+(New-OutputFile | Select-Object -ExpandProperty OutputFilePath).GetType()
+#Per analogy with prepared folder
+New-OutputFolder | Select-Object -ExpandProperty OutputFolderPath
+#Because the objest is type System.IO.DirectoryInfo
+(New-OutputFolder | Select-Object -ExpandProperty OutputFolderPath).GetType()
+#Name of prepared object can be based on parameters like prefix, suffix, etc.
+$FileToCreate = (New-OutputFile -ParentPath $(Get-ChildItem env:HOME).Value -OutputFileNamePrefix Application -OutputFileNameMidPart XAB -OutputFileNameSuffix ErrorsOnly -OutputFileNameExtension txt).OutputFilePath
+Write-Host $FileToCreate
+#The function create only object in memory not a real file
+Test-Path -Path $FileToCreate
+#Folder can be also based on prefixes, suffixes, etc.
+$FolderToCreate = New-OutputFolder -Parent \home\ -IncludeDateTimePartInOutputFolderName $false -OutputFolderNamePrefix Users
+#The function checks also if the folder with a prepared name already exist and inform about result with the exit code and the exit description
+$FolderToCreate
+#More you can find on the project page or in help
+#Project website: https://github.com/it-praktyk/New-OutputObject

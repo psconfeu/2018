@@ -1,0 +1,72 @@
+Update Pester to work on PowerShell Core at Windows, Linux, macOS
+https://github.com/pester/Pester/commit/312b05f372ca43a35970cfa41874686e033ae387
+http://bit.ly/2qC7OfH
+
+Update Pester to work on PowerShell Core at Windows, Linux, macOS - a source branch - PSCore_compatibility_clean
+https://github.com/it-praktyk/pester/tree/PSCore_compatibility_clean
+http://bit.ly/2qD2Qzg
+
+PScribo - Replace usage of Get-Service with Get-Process to improve compatiblity with PSCore 6.0 on Linux
+https://github.com/iainbrighton/PScribo/commit/a301aa45afa64c69b654a0707f46ab394bae30b4
+http://bit.ly/2HDOjup
+
+The PowerShell project - Known Issues
+https://github.com/PowerShell/PowerShell/blob/master/docs/KNOWNISSUES.md
+http://bit.ly/2IXiY5l
+
+PSCore6 should have a way to use Windows PowerShell PSModulePath
+https://github.com/PowerShell/PowerShell/issues/4056
+http://bit.ly/2H4V8Z3
+
+Where we are? - PowerShell way - the Get-EnvironmentInformation function
+https://github.com/PowerShell/PowerShell/blob/master/build.psm1#L100-L158
+http://bit.ly/2H8tDcE
+
+Where we are? - Pester way - the GetPesterOs function
+https://github.com/pester/Pester/blob/master/Functions/Environment.ps1#L7-L30
+http://bit.ly/2H8tDcE
+
+Replace CRLF using powershell
+https://stackoverflow.com/questions/19127741/replace-crlf-using-powershell
+http://bit.ly/2vjGszB
+
+#Demo-4
+
+Changes to handling chars of new lines
+https://github.com/it-praktyk/Pester/commit/028a3047a7bcb1b2c7279e21160e8b7e035fb42d
+http://bit.ly/2H7UR7E
+
+#Demo-5
+Customize the code to the specifics of systems other than Windows
+https://github.com/it-praktyk/Pester/commit/bbf66e9f84f93f131e667e7fe30ecf15fe973978
+http://bit.ly/2qFxqIm
+
+Replace usage of Get-Service with Get-Process to improve compatiblity with PSCore 6.0 on Linux
+https://github.com/iainbrighton/PScribo/commit/a301aa45afa64c69b654a0707f46ab394bae30b4
+http://bit.ly/2HDOjup
+
+#Demo-6
+
+Case insensitivity - it works on Windows but not on the other platforms
+https://github.com/it-praktyk/Pester/commit/ef62e80f05eac36141876996c31552ef70d76cf5
+http://bit.ly/2qG3ZVT
+
+the .gitattributes file for the Pester repository
+https://github.com/pester/Pester/blob/master/.gitattributes
+http://bit.ly/2qH69Fm
+
+git-config - Get and set repository or global options
+https://git-scm.com/docs/git-config#git-config-corefileMode
+http://bit.ly/2JWGosY
+
+the vors's comment for the pull request 'Standarize files to have Windows-styled end of lines' to the PlatyPS repository
+https://github.com/PowerShell/platyPS/pull/325#issuecomment-351182906
+http://bit.ly/2H8g3WN
+
+PowerShell - How to test your scripts for Windows, Linux and macOS
+https://dfinke.github.io/powershell/2018/02/08/PowerShell-How-to-test-your-scripts-for-Windows-Linux-and-macOS.html
+http://bit.ly/2H9jWPw
+
+PowerShell Gallery - Search for Tags:"PSEdition_Core"
+https://www.powershellgallery.com/items?q=Tags%3A%22PSEdition_Core%22&x=22&y=20
+http://bit.ly/2qBx2e1

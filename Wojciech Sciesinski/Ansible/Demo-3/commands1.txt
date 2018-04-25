@@ -1,0 +1,26 @@
+Get-Module -ListAvailable PSSlmgr
+
+cd /home/wosi/Scripts/PSConfEU2018-presentations/PSConfEU2018-presentation-Ansible/Demo-3/
+
+ansible-playbook -i inventory.ini playbook1.yml
+
+Get-Module -ListAvailable PSSlmgr
+
+Import-Module -Name PSSlmgr -Verbose
+
+Get-Command -Module PSSlmgr
+
+Get-LicenseStatus
+
+Get-LicenseStatus -Details
+
+Invoke-ReArm -Windows
+
+Get-LicenseStatus
+
+Restart-Computer
+
+Get-LicenseStatus -Details
+
+ansible-playbook -i inventory.ini playbook2.yml
+
