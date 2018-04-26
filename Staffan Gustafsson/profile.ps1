@@ -54,6 +54,34 @@ function show-commands {
     }| Format-Table -HideTableHeaders -Wrap
 }
 
+
+
+function ParseCommands {
+    param($file)
+    $err = $tok = $null
+    $ast = [Management.Automation.Language.Parser]::ParseFile($file, [ref]$tok, [ref]$err)
+    $statements = $ast.EndBlock.Statements
+    $comments = $tok.Where{$_.Kind -in 'Comment'}
+    $ext = $statements.extent + $comments.extent
+    $builder = [text.StringBuilder]::new(200)
+    $prevLineEnd = 0
+    foreach ($e in $ext | Sort-Object StartLinenumber) {
+        if ($e.StartLinenumber -eq $prevLineEnd + 1) {
+            if ($builder.Length -ne 0) {
+                $builder.Append("`n") | Out-Null
+            }
+            $builder.Append($e.Text) | Out-Null
+        }
+        else {
+            $builder.Replace("`r`n", "`n").ToString()
+            $builder.Length = 0
+            $builder.Append($e.Text) | Out-Null
+        }
+        $prevLineEnd = $e.EndLineNumber
+    }
+    $builder.Replace("`r`n", "`n").ToString()
+}
+
 function Reload {
     [Alias('r')]
     param()
