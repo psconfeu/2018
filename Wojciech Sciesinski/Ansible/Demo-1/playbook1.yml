@@ -1,0 +1,17 @@
+---
+- hosts: windows
+
+  tasks:
+
+  - name: Create a folders structure
+    win_file:
+      state: directory
+      path: C:\shares\share1
+
+  - name: Create a share
+    win_share:
+      name: share1
+      description: Super descriptive description
+      path: C:\shares\share1
+      list: no
+      full: Administrators

@@ -1,0 +1,14 @@
+---
+- hosts: windows
+
+  tasks:
+
+  - name: Create a folders structure
+    win_file:
+      state: directory
+      path: C:\Program Files\WindowsPowerShell\Module\PSSlmgr
+
+  - name: Copy PSSlmgr
+    win_copy:
+      src: /home/wosi/Scripts/PSConfEU2018-presentations/PSSlmgr/PSSlmgr
+      dest: C:\Program Files\WindowsPowerShell\Modules\

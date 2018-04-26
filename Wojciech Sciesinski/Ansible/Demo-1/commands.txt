@@ -1,0 +1,17 @@
+#On the management host
+vagrant up --no-provision
+
+
+#On the managed host
+C:\vagrant\PSConfEU2018-presentation-Ansible\Demo-1\ConfigureRemotingForAnsible.ps1
+
+#On the management host
+#Wrong
+ansible Windows1 -i inventory.ini -m ping
+
+#On the management host
+#Good
+ansible Windows1 -i inventory.ini -m win_ping
+
+#On the management host
+ansible-playbook playbook1.yml -i inventory.ini

@@ -1,0 +1,16 @@
+---
+- hosts: windows
+
+  tasks:
+
+  - name: Rearm Windows
+    win_psslmgr_rearm:
+      state: rearmed
+      rearmscope: windows
+  #   notify:
+  #    - reboot machine
+
+  # handlers:
+  # - name: reboot machine
+  #     win_reboot:
+  #       msg: Post-rearm reboot
