@@ -13,12 +13,12 @@
 
 | Country | City | Website | Contact |
 | ------- | -----| ------- | ------- |
-| Germany | Munich | aka.ms/psugmuc | @david_das_neves |
+| Germany | Munich | https://aka.ms/psugmuc | @david_das_neves |
 | Austria | everywhere | www.expertslive.at | @pwahlmueller |
 | Germany | Nürnberg | http://powershell-ug.com | @loeppinator |
 | Poland | Wroclaw | meetup.com/pposhug | add-content@pposh.org |
 | Switzerland | Geneva | www.gapusg.ch | @dbroeglin |
-| UK | Nottingham | Meetup.com/nottingham-powershell-group | @napalmgram |
+| UK | Nottingham | https://meetup.com/nottingham-powershell-group | @napalmgram |
 | UK | Manchester, London | http://get-psuguk.github.io | |
 | Scotland | Glasgow / Online | http://psdevopsug.scot | @scotPSUG | 
 | Sweden | | www.pugs.nu | @powershellUGS |
