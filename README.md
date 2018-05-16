@@ -2,6 +2,8 @@
 
 Click the speaker's name to see session materials (demo code, slide) and the title of the session to see the video (COMING SOON!). If a speaker's name is not clickable, it's because they have not posted their session materials here. Perhaps ask them nicely on Twitter to get in touch with Ravikanth or Amanda to post their stuff ;)
 
+**All Videos**: https://www.youtube.com/channel/UCxgrI58XiKnDDByjhRJs5fg
+
 ## Note to Speakers:
 
 - Please add a folder with your name, and then make a folder below that for each of your sessions, putting the all of the demos for each session into a .zip file.
