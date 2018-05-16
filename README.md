@@ -27,7 +27,7 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | Jeff Wouters | TFS and VSTS through Infrastructure as Code | DevOps |
 | [Chrissy LeMaire, Rob Sewell](https://github.com/psconfeu/2018/tree/master/Chrissy%20LeMaire) | How we made Configurable Pester Tests for SQL Server | Pester |
 | Walter Legowski | Invoke-CypherDog - Bloodhound Dog Whispering with PowerShell | Security |
-| Dr. H. Schwichtenberg | Was ein PowerShell-Nutzer über .NET wissen MUSS! | PowerShell |
+| Dr. H. Schwichtenberg | [Was ein PowerShell-Nutzer über .NET wissen MUSS!](https://www.youtube.com/watch?v=j7i2DO87BTs) | PowerShell |
 | [Mateusz Czerniawski](https://github.com/psconfeu/2018/tree/master/Mateusz%20Czerniawski) | OVF - getting fun from boring tasks | Pester |
 | All | Zoo Evening Event | All |
 | [Dongbo Wang](https://github.com/psconfeu/2018/tree/master/Dongbo%20Wang) | PowerShell Engine Internals  | PowerShell |
@@ -46,8 +46,8 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | Jared Atkinson | PowerShell, Reflection, and the Windows API | PowerShell |
 | [Irwin Strachan](https://github.com/psconfeu/2018/tree/master/Irwin%20Strachan) | Infrastructure validation using Pester | Pester |
 | [Wojciech Sciesinski](https://github.com/psconfeu/2018/tree/master/Wojciech%20Sciesinski) | Convert your Windows PowerShell module to be compatible with PowerShell Core 6.x | Core |
-| [Bartosz Bielawski](https://github.com/psconfeu/2018/tree/master/Bartosz%20Bielawski) | PowerShell Yin-Yang: The Worst Practices and Tips & Tricks | Fun |
-| [Mateusz Czerniawski](https://github.com/psconfeu/2018/tree/master/Mateusz%20Czerniawski) | Release Pipeline - the PPoSh Modules Story | DevOps |
+| [Bartosz Bielawski](https://github.com/psconfeu/2018/tree/master/Bartosz%20Bielawski) | [PowerShell Yin-Yang: The Worst Practices and Tips & Tricks](https://www.youtube.com/watch?v=iZsb7yLe6L0) | Fun |
+| [Mateusz Czerniawski](https://github.com/psconfeu/2018/tree/master/Mateusz%20Czerniawski) | [Release Pipeline - the PPoSh Modules Story](https://www.youtube.com/watch?v=4zLyKGJDW5I) | DevOps |
 | [Will Schroeder,Jared Atkinson](https://github.com/psconfeu/2018/tree/master/Workshops/Offensive%20PowerShell%20Workshop) | Workshop: The Power of the Dark Side: Offensive PowerShell Workshop | Security |
 | [Sergei Vorobev](https://github.com/psconfeu/2018/tree/master/Workshops/platyPS%20from%200%20to%201) | Workshop: PlatyPS: From 0 to 1 and beyond | PowerShell |
 | [Matthew Hitchcock, Gael Colas, Jan-Hendrik Peters, Raimund Andree](https://github.com/psconfeu/2018/tree/master/Workshops/Bring%20Existing%20Infrastructure%20under%20Code%20Control) | Workshop: Bring Existing Infrastructure under Code Control | DevOps |
@@ -56,7 +56,7 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | [Irwin Strachan](https://github.com/psconfeu/2018/tree/master/Irwin%20Strachan) | [Dependencies, how to make them evident](https://www.youtube.com/watch?v=XfasVsQAPbA) | PowerShell |
 | [David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner](https://github.com/psconfeu/2018/tree/master/David%20das%20Neves%20%26%20Julien%20Reisdorffer%20%26%20Raimund%20Andree%20%26%20Miriam%20Wiesner/The%20PowerShell%20Security%20Best%20Practice%20Live%20Demo) | The PowerShell Security Best Practice Live Demo! (Part 1) | Security |
 | [Rob Sewell](https://github.com/psconfeu/2018/tree/master/Rob%20Sewell/Continusous%20Delivery%20To%20The%20PowerShell%20Gallery) | Continuous Delivery for your Module to the PowerShell Gallery | PowerShell |
-| [Michael Greene](https://github.com/psconfeu/2018/tree/master/Michael%20Greene) | Manage servers using configuration as code | Azure |
+| [Michael Greene](https://github.com/psconfeu/2018/tree/master/Michael%20Greene) | [Manage servers using configuration as code](https://www.youtube.com/watch?v=S7jV-Qyo4tw) | Azure |
 | [David das Neves, Julien Reisdorffer, Raimund Andree, Miriam Wiesner](https://github.com/psconfeu/2018/tree/master/David%20das%20Neves%20%26%20Julien%20Reisdorffer%20%26%20Raimund%20Andree%20%26%20Miriam%20Wiesner/The%20PowerShell%20Security%20Best%20Practice%20Live%20Demo) | The PowerShell Security Best Practice Live Demo! (Part 2) | Security |
 | [Jan Egil Ring](https://github.com/psconfeu/2018/tree/master/Jan%20Egil%20Ring/Be%20the%20automator%20-%20not%20the%20automated) | [Be the automator - not the automated](https://www.youtube.com/watch?v=LQthAOBWUPc) | Azure |
 | Aleksandar Nikolic | [PowerShell in Azure Cloud Shell](https://www.youtube.com/watch?v=tavSglJpx7w) | Azure |
@@ -65,27 +65,27 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | Daniël Both | [Automate automating your automation, DSC with class-defined metadata](https://www.youtube.com/watch?v=CYKwoJbKvZs) | DevOps |
 | [Bruce Payette](https://github.com/psconfeu/2018/tree/master/Bruce%20Payette) | A Historical Architectural Tour of PowerShell (Part 2) |  |
 | [Staffan Gustafsson](https://github.com/psconfeu/2018/tree/master/Staffan%20Gustafsson) | [PowerShell Formatting](https://www.youtube.com/watch?v=tbXozToIzto) | PowerShell |
-| [Ben Gelens](https://github.com/psconfeu/2018/tree/master/Ben%20Gelens) | DSC in Configuration Management tool world | DevOps |
+| [Ben Gelens](https://github.com/psconfeu/2018/tree/master/Ben%20Gelens) | [DSC in Configuration Management tool world](https://www.youtube.com/watch?v=yc_KjTzBdSA) | DevOps |
 | [Steve Lee](https://github.com/psconfeu/2018/tree/master/Steve%20Lee) | PowerShell Core 6.1 and beyond | Core |
-| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | Werde zum XML Ninja mit PowerShell | PowerShell |
+| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | [Werde zum XML Ninja mit PowerShell](https://www.youtube.com/watch?v=yTg76nGpCnk) | PowerShell |
 | Friedrich Weinmann | [Parameter Classes: Making parameter-binding user friendly](https://www.youtube.com/watch?v=ui_pmyrXgew) | PowerShell |
 | [Daniel Bohannon](https://github.com/psconfeu/2018/tree/master/Daniel%20Bohannon) | DevSec Defense: How DevOps Practices Can Drive Detection Development For Defenders | Security |
-| [Jakob Gottlieb Svendsen](https://github.com/psconfeu/2018/tree/master/Jakob%20Gottlieb%20Svendsen) | Azure Automation in production, lessons learned in the field | Azure |
+| [Jakob Gottlieb Svendsen](https://github.com/psconfeu/2018/tree/master/Jakob%20Gottlieb%20Svendsen) | [Azure Automation in production, lessons learned in the field](https://www.youtube.com/watch?v=NvI8lfhdBUQ) | Azure |
 | Jeff Wouters | [Howto: Not get a burnout](https://www.youtube.com/watch?v=0MjqMlkA3gs) | PowerShell |
 | Andre Kamman | ETL with PowerShell | Database |
-| [Bartosz Bielawski, Thorsten Butz](https://github.com/psconfeu/2018/tree/master/Thorsten%20Butz) | The X factor | Core |
+| [Bartosz Bielawski, Thorsten Butz](https://github.com/psconfeu/2018/tree/master/Thorsten%20Butz) | [The X factor](https://www.youtube.com/watch?v=NF_Utc8ZFWQ) | Core |
 | Rick Taylor | Reverse DSC - Making SharePoint Admins feel loved again | DevOps |
 | [Ravikanth Chaganti](https://github.com/psconfeu/2018/tree/master/Ravikanth%20Chaganti) | SHiPS: Walk-through a bare-metal system configuration | PowerShell |
-| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | Automatisierung der Erstellung von Softwarepaketen mit PowerShell | Automation |
+| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | [Automatisierung der Erstellung von Softwarepaketen mit PowerShell](https://www.youtube.com/watch?v=tw90p1LoyiA) | Automation |
 | [David das Neves](https://github.com/psconfeu/2018/tree/master/David%20das%20Neves%20%26%20Julien%20Reisdorffer) | PowerShell Security - what to prioritize? | Security |
 | Walter Legowski | [PowerShell Empire Strikes Back](https://www.youtube.com/watch?v=jkIgRk5yeDQ) | Security |
 | [Stuart Preston](https://github.com/psconfeu/2018/tree/master/Stuart%20Preston) | Test-Driven Infrastructure with Test Kitchen, Chef, and DSC | Pester |
-| [Jan-Hendrik Peters, Raimund Andree](https://github.com/psconfeu/2018/tree/master/Jan-Hendrik%20Peters%20Raimund%20Andree) | Hybrid Lab Automation | Azure |
+| [Jan-Hendrik Peters, Raimund Andree](https://github.com/psconfeu/2018/tree/master/Jan-Hendrik%20Peters%20Raimund%20Andree) | [Hybrid Lab Automation](https://www.youtube.com/watch?v=RCLYjGv3MHw) | Azure |
 | [Øyvind Kallstad](https://github.com/psconfeu/2018/tree/master/%C3%98yvind%20Kallstad/Using%20other%20languages%20with%20PowerShell) | [Using other languages from PowerShell](https://www.youtube.com/watch?v=f7BCb32Jm_s) | PowerShell |
 | [Wojciech Sciesinski](https://github.com/psconfeu/2018/tree/master/Wojciech%20Sciesinski) | [Use your PowerShell skills to extend Ansible workflows - create your own Ansible module for Windows platform](https://www.youtube.com/watch?v=8FQuDEKUdsI) | PowerShell |
 | Andre Kamman | Use PowerShell as your language of choice inside Azure Functions | Azure |
 | Friedrich Weinmann | [The hitchhiker's guide to user-friendly module design](https://www.youtube.com/watch?v=KkUGbFyOT6M) | PowerShell |
-| Jeff Wouters | How to satisfy your OCD for and with PowerShell? | Pester |
+| Jeff Wouters | [How to satisfy your OCD for and with PowerShell?](https://www.youtube.com/watch?v=4M-ddIFZy2E) | Pester |
 | [Jakub Jareš](https://github.com/psconfeu/2018/tree/master/Jakub%20Jare%C5%A1) | [Common mistakes in Pester tests](https://www.youtube.com/watch?v=VBSxCXmNqQ8) | Pester |
 | Sergei Vorobev | [Python for PowerShellistas](https://www.youtube.com/watch?v=jMZFJMvhFTw) | PowerShell |
 | Jared Atkinson | Working with Binary Data: Writing your own parser | PowerShell |
@@ -93,6 +93,7 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | Rob Sewell, Jaap Brasser | Go with the flow (https://www.youtube.com/watch?v=fYLGP5G6Wjs) |  |
 | Flemming Rhode | [Building a powerful release pipeline for PowerShell](https://www.youtube.com/watch?v=tm4szV2lSf0) |   |
 | Ryan Bartram | [DSC Security: Delegating access to the beast](https://www.youtube.com/watch?v=GVo40ZFraKo) |   |
+| Christoph Bergmeister | [PSScriptAnalyzer](https://www.youtube.com/watch?v=Vra6G-qsKNs) |  |
 | All | Microsoft & Speakers Grand Finale | All |
 
 
