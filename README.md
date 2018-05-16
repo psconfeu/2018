@@ -9,45 +9,44 @@
 |Speaker |Title |Audience |Slides |Demo Code |Videos |
 |------|---------|---------|-------|-----------|------|
 | Tobias Weltner | Opening Ceremony | All | slides | demo code | video |
-| Jeffrey Snover | PowerShell 2018 - State of the Art (Keynote) | PowerShell | slides | demo code | video |
-| Joey Aiello | Managing your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH | Security | slides | demo code | video |
+| [Jeffrey Snover](https://github.com/psconfeu/2018/tree/master/Jeffrey%20Snover) | PowerShell 2018 - State of the Art (Keynote) | PowerShell | slides | demo code | video |
+| [Joey Aiello](https://github.com/psconfeu/2018/tree/master/Joey%20Aiello) | Managing your heterogeneous environments with PowerShell Core 6.0 and Win32-OpenSSH | Security | slides | demo code | video |
 | Mathias Jessen | RegEx ^3\.0$ - The Outer Edge | PowerShell | slides | demo code | video |
-| Jaap Brasser | Using Chat Automation (ChatOps) | Fun | slides | demo code | video |
-| Jan Egil Ring | Containers! Where is my PowerShell? | DevOps | slides | demo code | video |
+| [Jaap Brasser](https://github.com/psconfeu/2018/tree/master/Jaap%20Brasser) | Using Chat Automation (ChatOps) | Fun | slides | demo code | video |
+| [Jan Egil Ring, Øyvind Kallstad](https://github.com/psconfeu/2018/tree/master/Jan%20Egil%20Ring%20%26%20%C3%98yvind%20Kallstad/Containers!%20Where%20is%20my%20PowerShell) | Containers! Where is my PowerShell? | DevOps | slides | demo code | video |
 | Dr. H. Schwichtenberg | PowerShell Core 6 auf Linux. Und was mach ich jetzt damit auf Linux? | Core | slides | demo code | video |
-| Ben Gelens | The DSC Pull Server is dead, long live the DSC Pull Server | DevOps | slides | demo code | video |
-| Julien Reisdorffer, David das Neves | Red vs. Blue - Ready, Steady, Fight! | Security | slides | demo code | video |
-| Staffan Gustafsson | The Extended Type System | PowerShell | slides | demo code | video |
+| [Ben Gelens](https://github.com/psconfeu/2018/tree/master/Ben%20Gelens) | The DSC Pull Server is dead, long live the DSC Pull Server | DevOps | slides | demo code | video |
+| [Julien Reisdorffer, David das Neves](https://github.com/psconfeu/2018/tree/master/David%20das%20Neves%20%26%20Julien%20Reisdorffer) | Red vs. Blue - Ready, Steady, Fight! | Security | slides | demo code | video |
+| [Staffan Gustafsson](https://github.com/psconfeu/2018/tree/master/Staffan%20Gustafsson) | The Extended Type System | PowerShell | slides | demo code | video |
 | Mathias Jessen | How to become a PowerShell Type System Ninja! (Part 1) | DevOps | slides | demo code | video |
-| Miriam Wiesner | Securing your infrastructure with JEA |  | slides | demo code | video |
+| [Miriam Wiesner](https://github.com/psconfeu/2018/tree/master/Miriam%20Wiesner/SecuringYourInfrastructureWithJEA) | Securing your infrastructure with JEA |  | slides | demo code | video |
 | Jeff Wouters | TFS and VSTS through Infrastructure as Code | DevOps | slides | demo code | video |
-| Chrissy LeMaire, Rob Sewell | How we made Configurable Pester Tests for SQL Server | Pester | slides | demo code | video |
+| [Chrissy LeMaire, Rob Sewell](https://github.com/psconfeu/2018/tree/master/Chrissy%20LeMaire) | How we made Configurable Pester Tests for SQL Server | Pester | slides | demo code | video |
 | Walter Legowski | Invoke-CypherDog - Bloodhound Dog Whispering with PowerShell | Security | slides | demo code | video |
 | Dr. H. Schwichtenberg | Was ein PowerShell-Nutzer Ã¼ber .NET wissen MUSS! | PowerShell | slides | demo code | video |
-| Mateusz Czerniawski | OVF - getting fun from boring tasks | Pester | slides | demo code | video |
+| [Mateusz Czerniawski](https://github.com/psconfeu/2018/tree/master/Mateusz%20Czerniawski) | OVF - getting fun from boring tasks | Pester | slides | demo code | video |
 | All | Zoo Evening Event | All | slides | demo code | video |
-| Dongbo Wang | PowerShell Engine Internals  | PowerShell | slides | demo code | video |
-| Bartosz Bielawski | Saving Mr Typo: Authoring Tab Expansions with TabExpansionPlusPlus | PowerShell | slides | demo code | video |
+| [Dongbo Wang](https://github.com/psconfeu/2018/tree/master/Dongbo%20Wang) | PowerShell Engine Internals  | PowerShell | slides | demo code | video |
+| [Bartosz Bielawski](https://github.com/psconfeu/2018/tree/master/Bartosz%20Bielawski) | Saving Mr Typo: Authoring Tab Expansions with TabExpansionPlusPlus | PowerShell | slides | demo code | video |
 | Daniël Both | Case of the Unexplained - PowerShell Edition | Fun | slides | demo code | video |
 | Aleksandar Nikolic | Game of Automation Thrones | Azure | slides | demo code | video |
-| Chrissy LeMaire, Friedrich Weinmann | Somewhat Advanced dbatools Development | Database | slides | demo code | video |
+| [Chrissy LeMaire, Friedrich Weinmann](https://github.com/psconfeu/2018/tree/master/Chrissy%20LeMaire) | Somewhat Advanced dbatools Development | Database | slides | demo code | video |
 | Mathias Jessen | How to become a PowerShell Type System Ninja! (Part 2 | PowerShell | slides | demo code | video |
-| Jan-Hendrik Peters, Raimund Andree | Hands-on JEA | Security | slides | demo code | video |
-| Stuart Preston | Desired State: A close look at the PowerShell and DSC integrations with Chef | DevOps | slides | demo code | video |
-| Jakub Jareš | Pester internals and concepts | Pester | slides | demo code | video |
-| Daniel Bohannon  | Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science | Security | slides | demo code | video |
-| Jakob Gottlieb Svendsen | Automate everything: Bring self-service to LEGO robots | Fun | slides | demo code | video |
-| Ravikanth Chaganti | Configurations, Personalities, and Stamps - Modular approach to realizing the deployment pipeline | DevOps | slides | demo code | video |
-| Michael Greene | DSC in Azure Automation: Run configuration and orchestration as a cloud service | DevOps | slides | demo code | video |
+| [Jan-Hendrik Peters, Raimund Andree](https://github.com/psconfeu/2018/tree/master/Jan-Hendrik%20Peters%20Raimund%20Andree) | Hands-on JEA | Security | slides | demo code | video |
+| [Stuart Preston](https://github.com/psconfeu/2018/tree/master/Stuart%20Preston) | Desired State: A close look at the PowerShell and DSC integrations with Chef | DevOps | slides | demo code | video |
+| [Jakub Jareš](https://github.com/psconfeu/2018/tree/master/Jakub%20Jare%C5%A1) | Pester internals and concepts | Pester | slides | demo code | video |
+| [Daniel Bohannon](https://github.com/psconfeu/2018/tree/master/Daniel%20Bohannon)  | Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science | Security | slides | demo code | video |
+| [Jakob Gottlieb Svendsen](https://github.com/psconfeu/2018/tree/master/Jakob%20Gottlieb%20Svendsen) | Automate everything: Bring self-service to LEGO robots | Fun | slides | demo code | video |
+| [Ravikanth Chaganti](https://github.com/psconfeu/2018/tree/master/Ravikanth%20Chaganti) | Configurations, Personalities, and Stamps - Modular approach to realizing the deployment pipeline | DevOps | slides | demo code | video |
+| [Michael Greene](https://github.com/psconfeu/2018/tree/master/Michael%20Greene) | DSC in Azure Automation: Run configuration and orchestration as a cloud service | DevOps | slides | demo code | video |
 | Jared Atkinson | PowerShell, Reflection, and the Windows API | PowerShell | slides | demo code | video |
-| Irwin Strachan | Infrastructure validation using Pester | Pester | slides | demo code | video |
-| Wojciech Sciesinski | Convert your Windows PowerShell module to be compatible with PowerShell Core 6.x | Core | slides | demo code | video |
-| Bartosz Bielawski | PowerShell Yin-Yang: The Worst Practices and Tips & Tricks | Fun | slides | demo code | video |
-| Mateusz Czerniawski | Release Pipeline - the PPoSh Modules Story | DevOps | slides | demo code | video |
-| All | Getting Ready for Workshops | All | slides | demo code | video |
-| Will Schroeder,Jared Atkinson | Workshop: The Power of the Dark Side: Offensive PowerShell Workshop | Security | slides | demo code | video |
-| Sergei Vorobev | Workshop: PlatyPS: From 0 to 1 and beyond | PowerShell | slides | demo code | video |
-| Matthew Hitchcock, Gael Colas, Jan-Hendrik Peters, Raimund Andree | Workshop: Bring Existing Infrastructure under Code Control | DevOps | slides | demo code | video |
+| [Irwin Strachan](https://github.com/psconfeu/2018/tree/master/Irwin%20Strachan) | Infrastructure validation using Pester | Pester | slides | demo code | video |
+| [Wojciech Sciesinski](https://github.com/psconfeu/2018/tree/master/Wojciech%20Sciesinski) | Convert your Windows PowerShell module to be compatible with PowerShell Core 6.x | Core | slides | demo code | video |
+| [Bartosz Bielawski](https://github.com/psconfeu/2018/tree/master/Bartosz%20Bielawski) | PowerShell Yin-Yang: The Worst Practices and Tips & Tricks | Fun | slides | demo code | video |
+| [Mateusz Czerniawski](https://github.com/psconfeu/2018/tree/master/Mateusz%20Czerniawski) | Release Pipeline - the PPoSh Modules Story | DevOps | slides | demo code | video |
+| [Will Schroeder,Jared Atkinson](https://github.com/psconfeu/2018/tree/master/Workshops/Offensive%20PowerShell%20Workshop) | Workshop: The Power of the Dark Side: Offensive PowerShell Workshop | Security | slides | demo code | video |
+| [Sergei Vorobev](https://github.com/psconfeu/2018/tree/master/Workshops/platyPS%20from%200%20to%201) | Workshop: PlatyPS: From 0 to 1 and beyond | PowerShell | slides | demo code | video |
+| [Matthew Hitchcock, Gael Colas, Jan-Hendrik Peters, Raimund Andree](https://github.com/psconfeu/2018/tree/master/Workshops/Bring%20Existing%20Infrastructure%20under%20Code%20Control) | Workshop: Bring Existing Infrastructure under Code Control | DevOps | slides | demo code | video |
 | Will Schroeder | Auditing Domain Trust Relationships | Security | slides | demo code | video |
 | Rick Taylor | PowerShell for SharePoint Online - How DevOps is making SharePoint Admins feel loved again | Sharepoint | slides | demo code | video |
 | Irwin Strachan | Dependencies, how to make them evident | PowerShell | slides | demo code | video |
@@ -64,7 +63,7 @@
 | Staffan Gustafsson | PowerShell Formatting | PowerShell | slides | demo code | video |
 | Ben Gelens | DSC in Configuration Management tool world | DevOps | slides | demo code | video |
 | Steve Lee | PowerShell Core 6.1 and beyond | Core | slides | demo code | video |
-| Andreas Nick | Werde zum XML Ninja mit PowerShell | PowerShell | slides | demo code | video |
+| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | Werde zum XML Ninja mit PowerShell | PowerShell | slides | demo code | video |
 | Friedrich Weinmann | Parameter Classes: Making parameter-binding user friendly | PowerShell | slides | demo code | video |
 | Daniel Bohannon | DevSec Defense: How DevOps Practices Can Drive Detection Development For Defenders | Security | slides | demo code | video |
 | Jakob Gottlieb Svendsen | Azure Automation in production, lessons learned in the field | Azure | slides | demo code | video |
@@ -73,7 +72,7 @@
 | Bartosz Bielawski, Thorsten Butz | The X factor | Core | slides | demo code | video |
 | Rick Taylor | Reverse DSC - Making SharePoint Admins feel loved again | DevOps | slides | demo code | video |
 | Ravikanth Chaganti | SHiPS: Walk-through a bare-metal system configuration | PowerShell | slides | demo code | video |
-| Andreas Nick | Automatisierung der Erstellung von Softwarepaketen mit PowerShell | Automation | slides | demo code | video |
+| [Andreas Nick](https://github.com/psconfeu/2018/tree/master/Andreas%20Nick) | Automatisierung der Erstellung von Softwarepaketen mit PowerShell | Automation | slides | demo code | video |
 | David das Neves | PowerShell Security - what to prioritize? | Security | slides | demo code | video |
 | Walter Legowski | PowerShell Empire Strikes Back | Security | slides | demo code | video |
 | Stuart Preston | Test-Driven Infrastructure with Test Kitchen, Chef, and DSC | Pester | slides | demo code | video |
