@@ -25,7 +25,6 @@
 | Walter Legowski | Invoke-CypherDog - Bloodhound Dog Whispering with PowerShell | Security | slides | demo code | video |
 | Dr. H. Schwichtenberg | Was ein PowerShell-Nutzer Ã¼ber .NET wissen MUSS! | PowerShell | slides | demo code | video |
 | Mateusz Czerniawski | OVF - getting fun from boring tasks | Pester | slides | demo code | video |
-| All | Getting Ready for Workshops | All | slides | demo code | video |
 | All | Zoo Evening Event | All | slides | demo code | video |
 | Dongbo Wang | PowerShell Engine Internals  | PowerShell | slides | demo code | video |
 | Bartosz Bielawski | Saving Mr Typo: Authoring Tab Expansions with TabExpansionPlusPlus | PowerShell | slides | demo code | video |
@@ -107,7 +106,8 @@
 | Germany | Stuttgart | https://www.meetup.com/powershell-usergroup-stuttgart/ | @fredweinmann |
 | Germany | Hannover | www.psugh.de | info@psugh.de |
 | Germany | Dresden | http://joinpowershell.de | @psugdd |
-| Germany | Hamburg | https://www.meetup.com/Hamburg-PowerShell-User-Group | @fabian_bader @_Burbert |
+| Germany | Hamburg | https://www.meetup.com/Hamburg-PowerShell-User-Group | @fabian_bader @\_Burbert  |
 | Denmark | Sonderborg | https://www.meetup.com/Sonderborg-DevOps-Meetup/ | @flemmingrohde | 
 | The Netherlands | The Netherlands | http://dupsug.com | @dupsug |
 | Germany | Berlin | http://winsvr-berlin.de http://exusg.de | @cj_berlin |
+| Belgium | Belgium | BEPUG | @bepowershell |
