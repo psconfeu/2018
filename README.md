@@ -38,8 +38,7 @@
 | Jakub Jareš | Pester internals and concepts | Pester | slides | demo code | video |
 | Daniel Bohannon  | Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science | Security | slides | demo code | video |
 | Jakob Gottlieb Svendsen | Automate everything: Bring self-service to LEGO robots | Fun | slides | demo code | video |
-| Ravikanth Chaganti | Configurations, Personalities, and Stamps - Modular approach to realizing the deployment pipeline | DevOps | slides | dem
-o code | video |
+| Ravikanth Chaganti | Configurations, Personalities, and Stamps - Modular approach to realizing the deployment pipeline | DevOps | slides | demo code | video |
 | Michael Greene | DSC in Azure Automation: Run configuration and orchestration as a cloud service | DevOps | slides | demo code | video |
 | Jared Atkinson | PowerShell, Reflection, and the Windows API | PowerShell | slides | demo code | video |
 | Irwin Strachan | Infrastructure validation using Pester | Pester | slides | demo code | video |
