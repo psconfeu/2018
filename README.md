@@ -1,6 +1,6 @@
 # Session slides and demo scripts from PowerShell Conference EU, 2018
 
-Click the speaker's name to see session materials (demo code, slide) and the title of the session to see the video (COMING SOON!). If a speaker's name is not clickable, it's because they have not posted their session materials here. Perhaps ask them nicely on Twitter to get in touch with Ravikanth or Amanda to post their stuff ;)
+Click the speaker's name to see session materials (demo code, slide) and the title of the session to see the video (after it is posted). If a speaker's name is not clickable, it's because they have not posted their session materials here. Perhaps ask them nicely on Twitter to get in touch with Ravikanth or Amanda to post their stuff ;)
 
 **All Videos**: https://www.youtube.com/channel/UCxgrI58XiKnDDByjhRJs5fg
 
