@@ -106,6 +106,7 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | Germany | Nürnberg | http://powershell-ug.com | @loeppinator |
 | Poland | Wroclaw | meetup.com/pposhug | add-content@pposh.org |
 | Switzerland | Geneva | www.gapusg.ch | @dbroeglin |
+| Switzerland | Basel | https://www.bpug.ch/ | @stephanevg |
 | UK | Nottingham | https://meetup.com/nottingham-powershell-group | @napalmgram |
 | UK | Manchester, London | http://get-psuguk.github.io | |
 | Scotland | Glasgow / Online | http://psdevopsug.scot | @scotPSUG | 
@@ -118,3 +119,4 @@ Click the speaker's name to see session materials (demo code, slide) and the tit
 | The Netherlands | The Netherlands | http://dupsug.com | @dupsug |
 | Germany | Berlin | http://winsvr-berlin.de http://exusg.de | @cj_berlin |
 | Belgium | Belgium | BEPUG | @bepowershell |
+| France | France | https://frpsug.github.io/ https://www.meetup.com/FrenchPSUG/ | @stephanevg @lazywinadm @mickyballadelli @fabiendibot |
